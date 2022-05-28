@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Home | CPPS</title>
+<link rel="canonical" href="https://yourcpps.ml/">
+<link rel="icon" type="image/x-icon" href="/files/icon.png">
+<meta property="og:title" content="CPPS - Home">
+<meta property="og:type" content="website">
+<meta name="robots" content="index, follow">
+<meta name="keywords" content="Club Penguin">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="/files/cp.css" rel="stylesheet" type="text/css" class="css">
+  <script src="/files/timer.js"></script>
+<script>
+      let specialLoop = false;
+
+      if(specialLoop) window.onload = setupScene;
+
+      function setupScene() {
+        let videoScene = document.getElementById('videoScene');
+
+        videoScene.loop = false; //for the "ended" event
+        videoScene.addEventListener('ended', _=> {
+          videoScene.currentTime = 22;
+          videoScene.play();
+        });
+      }
+    </script>
+</head>
+<body>
+
+<nav id="main-navigation">
+<ul class="main-container">
+<li><a class="spf-link homeTab" href="/"></a></li>
+<div class="main-items">
+<li><a class="spf-link" href="#"><div class="nav-icon"></div>Home</a></li>
+<li><a class="spf-link" href="https://community.cprewritten.net"><div class="nav-icon blog"></div>Whats New?</a></li>
+</div>
+<li class="playTab"><a href="https://play.cprewritten.net/" title="Play Now!" aria-label="Play Now!" class="spf-link"></a></li>
+</ul>
+</nav>
+
+<div class="video-container">
+<video id="videoScene" loop="" autoplay="" muted="">
+<source src="/files/island-scene-default.mp4" type="video/mp4">
+</video>
+<div class="video-fix"></div>
+</div>
+
+<main class="main main-container">
+<section class="section-2 section-features">
+<div class="feature">
+<img src="/files/features-games.jpg" alt="Minigames">
+<h3 class="features-title"><b>Play Minigames!</b></h3>
+Play some awesome minigames to earn coins!
+</div>
+<div class="feature">
+<img src="/files/features-puffles.jpg" alt="Puffles">
+<h3 class="features-title"><b>Adopt Pet Puffles!</b></h3>
+Soon you will be able to adopt puffles - all with unique personalities!
+</div>
+<div class="feature">
+<img src="/files/features-shop.jpg" alt="Clothing">
+<h3 class="features-title"><b>Create Your Style!</b></h3>
+Be whoever you want to be! Mix and match your very own styles.
+</div>
+<div class="feature">
+<img src="/files/features-igloo.jpg" alt="Igloos">
+<h3 class="features-title"><b>Decorate Your Own Igloo!</b></h3>
+Create your own igloo and invite all of your friends over to an epic igloo party!
+</div>
+<div class="feature">
+<img src="/files/features-chat.jpg" alt="Hang Out">
+<h3 class="features-title"><b>Hang Out With Friends!</b></h3>
+Hang out with your friends and use over 25 emotes to express yourself!
+</div>
+</section>
+</main>
+
+<footer id="footer">
+<div class="main-container">
+<center><a href="/" class="spf-link"><img class="lozad" data-src="/files/logo.webp" src="/files/logo.webp?width=112&height=112" data-loaded="true"></a></center>

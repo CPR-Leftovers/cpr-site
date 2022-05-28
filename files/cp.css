@@ -1,0 +1,4513 @@
+@import url(httpss://fonts.googleapis.com/css?family=Material+Icons);
+    .video-controls, .video-top {
+    z-index: 1;
+    box-sizing: border-box;
+}
+.player-button, .video-player {
+    text-shadow: 0 0 8px rgba(0, 0, 0, .4);
+}
+#community p, .age-gate-modal .content h4 {
+    word-break: break-word;
+}
+@font-face {
+    font-family: "Burbank Small Bold";
+    src: url(https://hypopenguin.com/fonts/BurbankSmall-Bold.eot);
+    src: url(https://hypopenguin.com/fonts/BurbankSmall-Bold.eot#iefix) format("embedded-opentype"), url(https://hypopenguin.com/fonts/BurbankSmall-Bold.woff2) format("woff2"), url(https://hypopenguin.com/fonts/BurbankSmall-Bold.woff) format("woff"), url(https://hypopenguin.com/fonts/BurbankSmall-Bold.ttf) format("truetype"), url(https://hypopenguin.com/fonts/BurbankSmall-Bold.svg#BurbankSmall-Bold) format("svg");
+    font-weight: 700;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Burbank Small Medium";
+    src: url(https://hypopenguin.com/fonts/BurbankSmall-Medium.eot);
+    src: url(https://hypopenguin.com/fonts/BurbankSmall-Medium.eot#iefix) format("embedded-opentype"), url(https://hypopenguin.com/fonts/BurbankSmall-Medium.woff2) format("woff2"), url(https://hypopenguin.com/fonts/BurbankSmall-Medium.woff) format("woff"), url(https://hypopenguin.com/fonts/BurbankSmall-Medium.ttf) format("truetype"), url(https://hypopenguin.com/fonts/BurbankSmall-Medium.svg#BurbankSmall-Medium) format("svg");
+    font-style: normal;
+}
+@font-face {
+    font-family: CCComicrazy;
+    src: url(https://hypopenguin.com/fonts/CCComicrazyBoldItalic.eot);
+    src: url(https://hypopenguin.com/fonts/CCComicrazyBoldItalic.eot#iefix) format('embedded-opentype'), url(https://hypopenguin.com/fonts/CCComicrazyBoldItalic.woff2) format('woff2'), url(https://hypopenguin.com/fonts/CCComicrazyBoldItalic.woff) format('woff'), url(https://hypopenguin.com/fonts/CCComicrazyBoldItalic.ttf) format('truetype'), url(https://hypopenguin.com/fonts/CCComicrazyBoldItalic.svg#CCComicrazyBoldItalic) format('svg');
+    font-style: normal;
+}
+a, abbr, acronym, address, applet, big, blockquote, body, caption, cite, code, dd, del, dfn, div, dl, dt, em, fieldset, font, form, h1, h2, h3, h4, h5, h6, html, iframe, img, ins, kbd, label, legend, li, object, ol, p, pre, q, s, samp, small, span, strike, strong, sub, sup, table, tbody, td, tfoot, th, thead, tr, tt, ul, var {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-weight: inherit;
+    font-style: inherit;
+    font-size: 100%;
+    font-family: inherit;
+    text-align: left;
+    line-height: 1.2em;
+}
+table {
+    border-spacing: 0;
+    border-collapse: collapse;
+    width: 100%}
+blockquote:after, blockquote:before, q:after, q:before {
+    content: ""}
+.hypopenguin-button:before, .player-button:after, .video-controls:before, .video-top:before {
+    content: ''}
+:link img, :visited img, a img {
+    border: none;
+}
+sup {
+    line-height: 0;
+    vertical-align: text-top;
+}
+body, html {
+    margin: 0 auto;
+    font-family: "Burbank Small Medium", Helvetica, Arial, sans-serif;
+    background: url(https://hypopenguin.com/img/sub_bg.jpg) 50% 90px no-repeat #007bb8;
+}
+body {
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+html.override-defaults, html.override-defaults body {
+    background: 0 0;
+}
+b, h1, h2, h3, h4, h5, h6, strong {
+    font-family: "Burbank Small Bold", Helvetica, Arial, sans-serif;
+}
+h3 {
+    margin-top: 8px;
+    margin-bottom: 40px;
+}
+code {
+    font-family: monospace;
+}
+td, th {
+    padding: 8px;
+    border: 1px solid #ddd;
+}
+input:not([type=submit]), textarea {
+    height: 43px;
+    width: 300px;
+    padding: 12px 16px;
+    margin: 8px 0;
+    color: #555;
+    box-sizing: border-box;
+    border: 2px solid #e1e1e1;
+    border-radius: 8px;
+    outline: 0;
+    font-family: Burbank Small Bold, Helvetica, Arial, sans-serif;
+    font-size: 100%;
+    cursor: pointer;
+}
+.hypopenguin-button, .video-time, .video-title {
+    font-family: "Burbank Small Bold", Helvetica, Arial, sans-serif;
+}
+input[type=email]::-webkit-input-placeholder, input[type=password]::-webkit-input-placeholder, input[type=text]::-webkit-input-placeholder {
+    color: #a8a8a8;
+}
+input[type=email]::-moz-placeholder, input[type=password]::-moz-placeholder, input[type=text]::-moz-placeholder {
+    color: #a8a8a8;
+}
+input[type=email]:-ms-input-placeholder, input[type=password]:-ms-input-placeholder, input[type=text]:-ms-input-placeholder {
+    color: #a8a8a8;
+}
+input[type=email]:-moz-placeholder, input[type=password]:-moz-placeholder, input[type=text]:-moz-placeholder {
+    color: #a8a8a8;
+}
+textarea {
+    max-width: 100%}
+.screen-reader-text {
+    border: 0;
+    margin: -1px;
+    padding: 0;
+    word-wrap: normal!important;
+    overflow: auto;
+    height: auto;
+    width: auto;
+    clip: none;
+    clip-path: none;
+    position: relative!important;
+}
+.hidden {
+    display: none;
+}
+.hypopenguin-button {
+    outline: 0;
+    background: url(https://hypopenguin.com/img/button.png) center/2px 51px;
+    padding: 0 15px;
+    margin: 0 5px;
+    font-size: 16px;
+    height: 42px;
+    text-transform: capitalize;
+    line-height: 42px;
+    border-radius: 10px;
+    color: #fff;
+    cursor: pointer;
+    border: 2px solid #0080cc;
+    border-bottom-color: #0048a2;
+    display: inline-block;
+}
+.checkbox-link, .post-widget-title {
+    text-transform: uppercase;
+}
+a.hypopenguin-button {
+    color: #fff!important;
+}
+.hypopenguin-button:before {
+    background-image: url(https://hypopenguin.com/img/button-2.png);
+}
+.hypopenguin-button:hover {
+    background-image: url(https://hypopenguin.com/img/button-2.png);
+    border-top-color: #0048a2;
+    border-bottom-color: #0080cc;
+}
+.hypopenguin-button.hypopenguin-flat-button {
+    background: #00529b;
+    color: #fff;
+}
+.flex-1 {
+    flex: 1;
+}
+.flex-1-5 {
+    flex: 1.5;
+}
+.flex-2 {
+    flex: 2;
+}
+.flex-2-5 {
+    flex: 2.5;
+}
+.flex-3 {
+    flex: 3;
+}
+.flex-4 {
+    flex: 4;
+}
+.video-player {
+    height: 506.25px;
+    width: 900px;
+    margin: auto;
+    display: block;
+    color: #fff;
+    overflow: hidden;
+    position: relative;
+}
+.video-player:-webkit-full-screen {
+    height: 100%!important;
+    width: 100%!important;
+    box-shadow: none;
+}
+.video-player:-webkit-full-screen #video {
+    height: 100%;
+    width: 100%}
+.video-player:-webkit-full-screen #videoplayer {
+    height: 100%;
+    width: 100%}
+.video-player:-webkit-full-screen .video-controls {
+    zoom: 1.3;
+}
+.video-player:-webkit-full-screen .video-top {
+    zoom: 1.3;
+    display: block;
+}
+.video-player:-webkit-full-screen .video-captions {
+    zoom: 1.3;
+}
+.video-captions {
+    width: 60%;
+    position: absolute;
+    bottom: 20%;
+    left: 21.2%;
+    display: none;
+}
+.video-controls, .video-controls:before {
+    bottom: 0;
+    position: absolute;
+    width: 100%;
+    right: 0;
+}
+.video-caption {
+    background: rgba(8, 8, 8, .75);
+    font-size: 25px;
+    padding: 2px 8px;
+    border-radius: 5px;
+}
+.video-controls {
+    height: 62px;
+    left: 0;
+    margin: auto;
+    padding: 0 30px;
+}
+.video-controls:before {
+    height: 150%;
+    left: 0;
+    background: -moz-linear-gradient(top, transparent 0, rgba(0, 0, 0, .5) 100%);
+    background: -webkit-linear-gradient(top, transparent 0, rgba(0, 0, 0, .5) 100%);
+    background: linear-gradient(to bottom, transparent 0, rgba(0, 0, 0, .5) 100%);
+}
+.video-top {
+    height: 62px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+    padding: 20px 30px 0;
+    display: none;
+}
+.video-top:before {
+    height: 120%;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    background: -moz-linear-gradient(bottom, transparent 0, rgba(0, 0, 0, .5) 100%);
+    background: -webkit-linear-gradient(bottom, transparent 0, rgba(0, 0, 0, .5) 100%);
+    background: linear-gradient(to top, transparent 0, rgba(0, 0, 0, .5) 100%);
+}
+.video-title {
+    font-size: 20px;
+    position: absolute;
+}
+.video-progress {
+    height: 8px;
+    width: 100%;
+    background: rgba(255, 255, 255, .3);
+    border-radius: 10px;
+    position: relative;
+    margin: auto auto 15px;
+    cursor: pointer;
+}
+.video-progress-bar {
+    height: 100%;
+    width: 100%;
+    background: rgba(255, 255, 255, .5);
+    border-radius: 10px;
+    transform-origin: 0 0;
+}
+.video-progress-tooltip {
+    background: rgba(0, 0, 0, .8);
+    border-radius: 3px;
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    padding: 4px 8px;
+    display: none;
+    text-align: center;
+    margin: 5px auto auto;
+}
+.video-progress-tooltip span {
+    text-align: center;
+    width: 100%;
+    display: inline-block;
+}
+.video-progress-tooltip img {
+    height: auto;
+    width: 80px;
+}
+.video-scrubber {
+    height: 15px;
+    width: 15px;
+    border-radius: 7px;
+    background-color: #fff;
+    position: absolute;
+    top: -3.5px;
+    left: -3.5px;
+    cursor: pointer;
+    display: none;
+}
+.player-button, .video-time {
+    height: 30px;
+    position: relative;
+    display: inline-block;
+}
+.video-scrubber:active {
+    box-shadow: 0 0 8px 0 rgba(0, 0, 0, .2);
+}
+.video-time {
+    line-height: 30px;
+    vertical-align: middle;
+    margin: auto auto auto 6px;
+}
+.play-button, .player-button {
+    font-family: 'Material Icons';
+    font-weight: 400;
+    text-align: center;
+    color: #fff;
+    vertical-align: middle;
+    cursor: pointer;
+}
+.player-button {
+    width: 30px;
+    font-size: 24px;
+    margin: auto 12px auto auto;
+}
+.player-button:after {
+    height: 2px;
+    width: 0;
+    position: absolute;
+    right: 0;
+    bottom: -2px;
+    left: 0;
+    margin: auto;
+    background: #fff;
+    display: block;
+    transition: width .15s;
+}
+.player-button[aria-pressed=true]:after {
+    width: 90%}
+.player-button.top {
+    float: right;
+}
+.controls-right .player-button {
+    margin-left: 12px;
+    margin-right: auto;
+}
+#play.player-button:before {
+    content: '\e037'}
+#play.pause.player-button:before {
+    content: '\e034'}
+#fullscreen.player-button:before {
+    content: '\e3c2'}
+#volume.player-button {
+    margin-right: 6px;
+}
+#volume.player-button:before {
+    content: '\e050'}
+#volume.muted.player-button:before {
+    content: '\e04f'}
+#captions.player-button:before {
+    content: '\e048'}
+#settings.player-button:before {
+    content: '\e8b8'}
+.volume-panel {
+    height: 30px;
+    width: 0;
+    background: red;
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+}
+.controls-left {
+    float: left;
+    display: inline-block;
+}
+.controls-right {
+    float: right;
+    display: inline-block;
+}
+.play-button, .play-button:before {
+    display: table;
+    position: absolute;
+    margin: auto;
+    width: 100%;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+}
+.play-button {
+    height: 100%;
+    font-size: 120px;
+    background: rgba(0, 0, 0, .5);
+}
+.play-button:before {
+    content: '\e037'}
+.video-container {
+    position: relative;
+}
+.video-fix, header {
+    position: absolute;
+}
+.video-fix {
+    width: 100%;
+    height: 80px;
+    background: #2584b4;
+    background: -moz-linear-gradient(top, #2584b4 0, #007bb8 100%);
+    background: -webkit-linear-gradient(top, #2584b4 0, #007bb8 100%);
+    background: linear-gradient(to bottom, transparent 0, #007bb8 100%);
+    display: block;
+    bottom: 0;
+}
+#videoScene {
+    margin: -10px auto auto;
+    width: 100%;
+    position: relative;
+}
+#videoScene canvas {
+    position: absolute;
+    right: 0;
+    left: 0;
+    margin: auto;
+    width: 100%;
+    zoom: 1.117;
+}
+.preloadItems {
+    display: none;
+}
+.quotebox {
+    font-style: italic;
+    text-align: center;
+}
+.quoteby {
+    display: block;
+    text-align: right;
+    margin: 10px 0 0;
+}
+.featured-home-image {
+    width: 100%;
+    height: 325px;
+    background-size: cover;
+    background-position: center;
+}
+.main-items, .section-multiple {
+    display: flex;
+    justify-content: space-between;
+}
+.section-2 {
+    background: url(https://hypopenguin.com/img/content-box-bottom.png) left bottom no-repeat #0095e0;
+    padding: 35px;
+    border-radius: 8px;
+    margin: 30px auto;
+    color: #fff;
+}
+.section-blog {
+    padding: 0;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    background-color: #0095e0;
+}
+.section-blog .inner {
+    padding: 35px 40px;
+    background-color: #0095e0;
+}
+.section-blog .inner h2 {
+    margin: 0 0 .83em;
+}
+.section-multiple .section-left, .section-multiple .section-right {
+    flex: 1;
+    background-color: #0095e0;
+    border-radius: 8px;
+}
+.section-multiple .section-left {
+    margin-right: 30px;
+}
+.section-multiple .section-right {
+    margin-left: 30px;
+}
+.section-left, .section-right {
+    width: 48%;
+    margin: 30px auto;
+}
+.section-left .section-2, .section-right .section-2 {
+    margin: auto;
+}
+.section-2.section-blog h2 {
+    font-size: 18px;
+}
+.section-long {
+    width: 100%;
+    display: flex;
+}
+.section-long .section-2 {
+    display: flex;
+}
+.section-long .section-2.section-blog .inner {
+    box-sizing: border-box;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.section-long .section-2.section-blog {
+    flex-direction: row;
+}
+.section-long .section-2.section-blog .featured-home-image {
+    height: 200px;
+    flex: 1.15;
+}
+.section-long .section-2.section-blog h2 {
+    font-size: 22px;
+}
+.section-left {
+    float: left;
+}
+.section-right {
+    float: right;
+}
+.main:after {
+    content: "";
+    clear: both;
+    display: block;
+    margin: 0 0 40px;
+}
+.section-features {
+    margin: 50px 0 30px;
+    display: flex;
+}
+.section-features .feature {
+    flex: 1;
+    text-align: center;
+    margin: 0 5px;
+}
+.section-features .feature img {
+    width: 100%;
+    margin: auto auto 5px;
+    -webkit-user-drag: none;
+    -khtml-user-drag: none;
+    -moz-user-drag: none;
+    -o-user-drag: none;
+    user-drag: none;
+}
+.main-section-title {
+    color: #fff;
+    text-align: center;
+    margin: 60px 0 15px;
+    font-size: 1.5em;
+}
+.features-title {
+    text-align: center;
+    margin: 10px 0 6px;
+}
+.nav-icon {
+    width: 40px;
+    height: 40px;
+    background-image: url(https://hypopenguin.com/img/icon-home.png);
+    background-size: 95%;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 8px auto auto;
+}
+.nav-icon.blog {
+    background-image: url(https://hypopenguin.com/img/icon-blog.png);
+}
+.new .nav-icon.blog {
+    background-image: url(https://hypopenguin.com/img/icon-blog-new.png);
+}
+.nav-icon.help {
+    background-image: url(https://hypopenguin.com/img/icon-legal.png);
+}
+.nav-icon.social {
+    background-image: url(https://hypopenguin.com/img/icon-social.png);
+}
+.nav-icon.staff {
+    background-image: url(https://hypopenguin.com/img/icon-mod.png);
+}
+.main-container {
+    width: 65%;
+    width: 1200px;
+    margin: auto;
+}
+#main-navigation .main-container {
+    display: flex;
+    justify-content: space-between;
+}
+header {
+    height: auto;
+    background-color: #0186b1;
+}
+#footer, #main-navigation {
+    height: 90px;
+    line-height: 90px;
+    box-shadow: 0 3px 6px 0 rgba(0, 36, 68, .16);
+    background-color: #0662bd;
+    background-image: url(https://hypopenguin.com/img/banner.png);
+    background-size: contain;
+    z-index: 2;
+    position: relative;
+}
+#footer {
+    box-shadow: none;
+    height: 190px;
+    width: 100%;
+    min-width: 1022px;
+    background: url(https://hypopenguin.com/img/ftr_repeat.jpg) repeat-x #0186b1;
+    text-align: center;
+    color: #fff;
+    line-height: initial;
+    margin-top: -30px;
+    font-family: "Burbank Small Bold", Helvetica, Arial, sans-serif;
+}
+#home #footer {
+    margin-top: 30px;
+}
+#footer img {
+    height: auto;
+    width: 200px;
+    margin: auto auto 20px;
+    display: block;
+}
+#footer br {
+    content: ' ';
+    display: none;
+}
+#main-navigation li, #main-navigation ul {
+    list-style: none;
+}
+#main-navigation li {
+    float: left;
+}
+#main-navigation li a {
+    height: 88.5px;
+    line-height: 38px;
+    background-color: transparent;
+    padding: 0 30px;
+    text-align: center;
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    font-size: 17px;
+    font-weight: 700;
+    font-family: "Burbank Small Bold", Helvetica, Arial, sans-serif;
+    border: none;
+    position: relative;
+    text-shadow: 0 3px #007bb8;
+}
+.account-prompt.account-prompt-create .close-button, .modal .close-btn, .modal span {
+    font-size: 22px;
+    font-family: "Burbank Small Bold", Helvetica, Arial, sans-serif;
+    text-align: center;
+}
+#footer .main-container {
+    padding: 20px 0;
+    box-sizing: border-box;
+    background: url(https://hypopenguin.com/img/ftr_bg.png) 50% 0 no-repeat;
+    text-align: center;
+}
+#main-navigation li a.active, #main-navigation li a:hover {
+    background-color: rgba(0, 0, 0, .1);
+}
+#main-navigation li a.active .nav-icon, #main-navigation li a:hover .nav-icon {
+    background-size: 100%}
+#main-navigation li a.homeTab {
+    background-image: url(https://hypopenguin.com/img/header-logo.png);
+    background-size: cover;
+    background-position: center;
+    width: 100px;
+    border: none;
+}
+#main-navigation li a.homeTab:after {
+    content: '';
+    background-image: url(https://hypopenguin.com/img/header-logo-hover.png);
+}
+#main-navigation li a.homeTab:hover {
+    background-image: url(https://hypopenguin.com/img/header-logo-hover.png);
+    background-color: transparent;
+    border: none;
+}
+#main-navigation .playTab {
+    border: none;
+    display: inline-block;
+    order: 3;
+}
+#main-navigation .playTab a {
+    background-image: url(https://hypopenguin.com/img/header-play.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100px;
+    border: none;
+}
+#main-navigation .playTab a:after {
+    content: '';
+    background-image: url(https://hypopenguin.com/img/header-play-hover.png);
+}
+#main-navigation .playTab a:hover {
+    background-image: url(https://hypopenguin.com/img/header-play-hover.png);
+    background-color: transparent;
+    border: none;
+}
+.blog-box {
+    background-image: url(https://hypopenguin.com/img/box_blog_bg.gif);
+    width: 490px;
+    height: 230px;
+    margin: 0 0 20px 20px;
+    display: inline-block;
+}
+.modal, .modal .bg {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+}
+.modal {
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.modal .bg {
+    background: rgba(0, 0, 0, .8);
+}
+.account-prompt.account-prompt-create .close-button, .modal .close-btn {
+    height: 30px;
+    width: 30px;
+    background: #fff;
+    border: 3px solid #00529b;
+    border-radius: 50%;
+    position: absolute;
+    top: -15px;
+    right: -15px;
+    color: #00529b;
+    line-height: 34px;
+    cursor: pointer;
+    font-weight: 700;
+}
+.account-prompt.account-prompt-create .close-button:active, .modal .close-btn:active {
+    color: #fff;
+    background: #00529b;
+    border-color: #fff;
+}
+.account-prompt.account-prompt-create .close-button:after, .modal .close-btn:after {
+    content: '\2716';
+    background: 0 0;
+}
+.modal span {
+    padding: 50px;
+    width: 100%;
+    display: block;
+    color: #00529b;
+    box-sizing: border-box;
+}
+.modal .content {
+    height: -webkit-fit-content;
+    width: 800px;
+    max-height: 700px;
+    max-width: 1200px;
+    box-sizing: border-box;
+    -moz-border-radius: 20px;
+    -webkit-border-radius: 20px;
+    border-radius: 20px;
+    position: fixed;
+    background: #fff;
+    border: 3px solid #00529b;
+}
+.modal .content .frame {
+    height: 100%;
+    height: -webkit-fill-available;
+    overflow-y: auto;
+    padding: 20px;
+}
+.modal .content .frame .loader-wrap {
+    height: 80px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+}
+.modal.modal-image .content {
+    height: -webkit-fit-content;
+    max-height: 100%;
+    width: -webkit-fit-content;
+    max-width: 100%;
+    padding: 20px;
+}
+.modal.modal-image img {
+    max-width: 800px;
+    max-height: 100%;
+    display: block;
+    -moz-border-radius: 15px;
+    -webkit-border-radius: 15px;
+    border-radius: 15px;
+    object-fit: cover;
+    object-position: center;
+}
+.age-gate-modal {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 3;
+    display: none;
+    padding: 100px;
+    box-sizing: border-box;
+    background: url(https://hypopenguin.com/img/agegate-bg.jpg) center/cover no-repeat;
+}
+.age-gate-modal .content {
+    width: 700px;
+    position: absolute;
+    top: 30%;
+    bottom: 0;
+    right: 200px;
+    margin: auto;
+    text-align: center;
+    zoom: 1.1;
+}
+.age-gate-modal .content h3 {
+    color: #ffd700;
+    font-size: 32px!important;
+    margin: auto auto 20px;
+}
+.age-gate-modal .content h3, .age-gate-modal .content h4 {
+    text-align: center;
+}
+.age-gate-modal .content a {
+    color: #ffd700;
+    display: inline-block;
+    text-transform: uppercase;
+    font-family: "Burbank Small Bold", Helvetica, Arial, sans-serif;
+    font-size: 29px;
+    margin: 20px 40px auto;
+}
+.age-gate-modal .content img {
+    width: 350px;
+    margin: auto auto 30px;
+}
+.latest-post-box {
+    display: flex;
+    box-sizing: border-box;
+    margin: auto;
+}
+.latest-post-box .image-preview {
+    width: 400px;
+    border: 2px solid #eee;
+    -moz-border-radius: 12px;
+    -webkit-border-radius: 12px;
+    border-radius: 12px;
+    overflow: hidden;
+    display: inline-block;
+    flex: 1.2;
+    margin: auto 15px auto auto;
+}
+.latest-post-box .image-preview:hover {
+    border-color: #82bffd;
+}
+.latest-post-box .image-preview img {
+    max-height: 300px;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+}
+.latest-post-box .body-preview {
+    display: inline-block;
+    flex: 1;
+    margin: auto auto auto 15px;
+}
+.latest-post-box .date-part {
+    font-size: 18px;
+    font-weight: 700;
+    font-family: Burbank Small Bold, Helvetica, Arial, sans-serif;
+}
+.community-poll .poll-percentage, .community-poll .poll-question, .community-poll .poll-result-title, .community-poll .poll-title, .community-poll input[type=submit], .community-section .view-more, .community-section-title, .community-title, .hypopenguin-flat-button, .read-more, .wp-block-button a {
+    font-family: "Burbank Small Bold", Helvetica, Arial, sans-serif;
+}
+.latest-post-box .default-btn, .latest-post-box .post-part {
+    margin: 20px auto auto;
+}
+.post-listing #content .padd .post-widgets:not(.loading) .loader-wrap {
+    width: 73%}
+.post-listing #content .padd .loader-wrap .loader {
+    margin: auto auto 30px;
+}
+.main-divider {
+    height: 1px;
+    font-size: 1px;
+    line-height: 1px;
+    border-bottom: 2px solid rgba(0, 0, 0, .1);
+    margin: 40px 0;
+}
+.new-im {
+    height: 30px;
+    width: 50px;
+    background: url(https://hypopenguin.com/img/new.png) center/contain no-repeat;
+    position: absolute;
+    bottom: 34px;
+    right: 25px;
+    transform: rotate(6deg);
+}
+.community-left {
+    width: calc(68% - 30px);
+    border-right: 2px solid rgba(0, 0, 0, .1);
+    padding: 0 30px 0 0;
+}
+.community-right {
+    width: calc(35% - 30px);
+    margin: auto auto auto 30px;
+}
+.community-left, .community-right {
+    float: left;
+    box-sizing: border-box;
+}
+.community-title {
+    color: #00529b;
+    font-size: 22px;
+    margin: auto auto 15px;
+    text-align: center;
+}
+.community-widget {
+    margin: auto auto 50px;
+}
+.community-widget img {
+    border: 2px solid #eee;
+    -moz-border-radius: 12px;
+    -webkit-border-radius: 12px;
+    border-radius: 12px;
+}
+.community-widget img:hover {
+    border-color: #82bffd;
+}
+.community-poll {
+    width: 100%;
+    background: url(https://hypopenguin.com/img/blog-image-poll.jpg) right bottom/50% no-repeat;
+}
+.community-poll:after {
+    content: '';
+    clear: both;
+    display: block;
+}
+.community-poll .poll-header {
+    margin: auto auto 20px;
+}
+.login-comment-btn .hypopenguin-session-hidden {
+    cursor: pointer;
+}
+.community-poll input[type=submit], .hypopenguin-flat-button, .wp-block-button a {
+    outline: 0;
+    border: none;
+    border-radius: 5px!important;
+    padding: 10px 25px!important;
+    cursor: pointer;
+    float: right;
+    margin: 10px auto auto;
+    font-size: 16px!important;
+    box-sizing: border-box;
+    text-align: center;
+}
+.community-poll .hypopenguin-flat-button, .community-poll input[type=submit] {
+    width: 100%;
+    background: #00529b;
+    color: #fff;
+}
+.community-poll .poll-icon {
+    height: 50px;
+    width: 50px;
+    background: url(https://hypopenguin.com/img/poll-icon.png) center/contain no-repeat;
+    margin: auto 20px auto auto;
+    display: inline-block;
+    vertical-align: middle;
+}
+.community-poll .poll-title {
+    display: inline-block;
+    vertical-align: text-top;
+    color: #00529b;
+    font-size: 22px;
+}
+.community-poll .poll-question {
+    font-size: 17px;
+}
+.community-poll .poll-options {
+    margin: 15px auto auto;
+}
+.community-poll .poll-options .loader-wrap {
+    zoom: .9;
+    margin: 50px 0 80px;
+}
+.community-poll .poll-options input[type=radio] {
+    position: absolute;
+    left: -9999999px;
+}
+.community-poll .poll-options input[type=radio]:checked~.poll-radio {
+    background: #00529b;
+}
+.community-poll .poll-option {
+    cursor: pointer;
+    display: block;
+    margin: auto auto 10px;
+    clear: both;
+}
+.community-poll .poll-option:after {
+    content: '';
+    clear: both;
+    display: block;
+}
+.community-poll .poll-radio {
+    height: 12px;
+    width: 12px;
+    display: inline-block;
+    border-radius: 50%;
+    vertical-align: top;
+    margin: auto 10px auto auto;
+    border: 2px solid #00529b;
+}
+.community-poll .poll-options input[type=radio]:checked~span {
+    font-family: "Burbank Small Bold", Helvetica, Arial, sans-serif;
+}
+.community-poll .poll-options span {
+    width: 88%;
+    float: right;
+}
+.community-poll .poll-results {
+    display: none;
+    margin: 15px auto auto;
+}
+.community-poll .poll-result {
+    margin: auto auto 15px;
+}
+.community-poll .poll-result-title {
+    margin: auto auto 5px;
+}
+.community-poll .poll-result-percent {
+    height: 22px;
+    width: 100%;
+    background: #fff5cc;
+    border-radius: 20px;
+    overflow: hidden;
+    position: relative;
+}
+.community-poll .poll-selection {
+    height: 100%;
+    width: 0;
+    background: #ffe16f;
+    background: -moz-linear-gradient(top, #ffe16f 0, #ffbf3e 100%);
+    background: -webkit-linear-gradient(top, #ffe16f 0, #ffbf3e 100%);
+    background: linear-gradient(to bottom, #ffe16f 0, #ffbf3e 100%);
+    border-radius: 20px;
+}
+.community-poll .poll-percentage {
+    color: #786f4d;
+    position: absolute;
+    top: 0;
+    right: 10px;
+    bottom: 0;
+    line-height: 22px;
+}
+.community-content-wrapper {
+    display: flex;
+    margin: -8px;
+}
+#community_inside .community-content-wrapper, .modal .community-content-wrapper {
+    flex-wrap: wrap;
+    align-content: flex-start;
+    height: 100%}
+.community-section {
+    clear: both;
+    position: relative;
+}
+.community-section:not(:last-of-type) {
+    margin: 0 0 50px;
+}
+.community-section-title {
+    color: #00529b;
+    font-size: 22px;
+    margin: auto auto 15px;
+}
+.community-content {
+    height: auto;
+    width: 230px;
+    display: inline-block;
+    flex: 1;
+    border: 2px solid #eee;
+    -moz-border-radius: 12px;
+    -webkit-border-radius: 12px;
+    border-radius: 12px;
+    overflow: hidden;
+    margin: 8px;
+    position: relative;
+}
+#community_inside .community-content-wrapper .community-content, .modal .community-content-wrapper .community-content {
+    height: 122.7px;
+    width: 14.33%;
+    flex: unset;
+}
+.modal .community-content-wrapper .community-content {
+    height: 108px;
+    width: 14%}
+.community-section.fan-art .community-content {
+    height: 111px;
+}
+.community-section.videos .community-content {
+    height: 150px;
+}
+.community-section.videos .community-content a:after {
+    content: '>';
+    height: 45px;
+    width: 45px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: #837bc3;
+    border-radius: 0 10px;
+    border-bottom: 2px solid #eee;
+    border-left: 2px solid #eee;
+    font-size: 30px;
+    color: #fff;
+}
+.community-content:hover {
+    border-color: #82bffd;
+}
+.banner-wrapper .community-content:hover {
+    border-color: #eee;
+}
+.community-content img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+}
+.banner-wrapper .community-content img {
+    object-fit: contain;
+}
+.community-section .view-more {
+    color: #00529b;
+    font-size: 15px;
+    margin: 10px auto auto 15px;
+    display: inline-block;
+    float: right;
+}
+.banner-wrapper input[type=text] {
+    width: 100%;
+    border: 2px solid #eee;
+    -moz-border-radius: 12px;
+    -webkit-border-radius: 12px;
+    border-radius: 12px;
+    outline: 0;
+    margin: auto 8px;
+}
+.banner-wrapper {
+    flex: 1;
+    display: flex;
+    flex-wrap: wrap;
+}
+#community #content {
+    background: url(https://hypopenguin.com/img/sub_inner_bg.gif) no-repeat, url(https://hypopenguin.com/img/blog-image-default.jpg) right bottom/60% no-repeat #fff;
+}
+.read-more {
+    color: #00529b!important;
+    font-size: 18px;
+    margin: 20px auto auto;
+    display: inline-block;
+}
+.wp-block-button {
+    overflow: auto;
+    display: table;
+}
+.wp-block-video video {
+    width: 100%}
+.blog_entry figure, .wp-block-gallery, .wp-block-table {
+    margin: 15px auto!important;
+}
+@media (max-width:47.99em) {
+    .section-left, .section-right {
+    width: 100%;
+    float: none;
+}
+}.subpage #centerWrap {
+    position: relative;
+    z-index: 1;
+}
+.subpage #content {
+    margin: 0;
+    height: auto;
+    width: 900px;
+    background: url(https://hypopenguin.com/img/sub_inner_bg.gif) no-repeat #fff;
+    border-left: 3px solid #013a69;
+    border-right: 3px solid #013a69;
+    color: #555;
+    position: relative;
+    top: -15px;
+    left: 58px;
+    overflow: hidden;
+}
+.subpage #content .padd {
+    padding: 40px 30px 60px;
+}
+.subpage #content h2, .subpage #content h3 {
+    color: #00529b;
+    font-weight: 700;
+}
+.subpage #content .pageName {
+    font-size: 180%;
+    padding-top: 3px;
+    height: 75px;
+}
+.subpage #content .sectionName {
+    font-size: 135%}
+.subpage #content .box510 .sectionName {
+    font-size: 120%;
+    color: #78a8dc;
+}
+.subpage #content .box490 .sectionName {
+    font-size: 80%;
+    color: #78a8dc;
+}
+.subpage #content h4 {
+    font-size: 100%}
+#community h3, .subpage #content h3 {
+    font-size: 150%}
+#contentWrap {
+    position: relative;
+    width: 1022px;
+    margin: 0 auto;
+    z-index: 20;
+}
+#community #content .colLeft p.blurb {
+    width: 270px;
+    margin: 4px 0 0;
+    background: 0 0;
+}
+#community h2 {
+    margin-bottom: 60px;
+}
+#community #content .padd .pageName {
+    position: relative;
+    height: 74px;
+    margin: 0 0 12px;
+    z-index: 50;
+}
+#community h4 {
+    margin: 0;
+    padding: 0 0 5px;
+    color: #00529b;
+    font-size: 135%!important;
+    font-weight: 700;
+}
+#community p {
+    margin: 0;
+    line-height: 150%}
+#community #content .colLeft {
+    position: relative;
+    z-index: 2;
+}
+#community #content .colLeft .faButtons .seeMore {
+    width: 82px;
+    float: left;
+    height: 42px;
+    margin: 0 10px 0 0;
+}
+#community #content .colLeft .faButtons .seeMore a, #community #content .colLeft .faButtons .seeMore a:link, #community #content .colLeft .faButtons .seeMore a:visited {
+    display: block;
+    width: 82px;
+    height: 32px;
+    background: url(https://hypopenguin.com/images/button_seemore_com.gif) no-repeat;
+    margin: 10px 0;
+    padding: 0;
+    border: 0;
+}
+#community #content .colLeft .faButtons .seeMore a:hover {
+    background: url(https://hypopenguin.com/images/button_seemore_com.gif) 0 -32px no-repeat;
+    width: 82px;
+    height: 32px;
+}
+#community #content .colLeft .faButtons .submitYour {
+    width: 133px;
+    height: 42px;
+}
+#community #content .colLeft .faButtons .submitYour a, #community #content .colLeft .faButtons .submitYour a:link, #community #content .colLeft .faButtons .submitYour a:visited {
+    display: block;
+    width: 133px;
+    height: 32px;
+    background: url(https://hypopenguin.com/images/button_submityour_com.gif) no-repeat;
+    margin: 10px 0;
+    padding: 0;
+    border: 0;
+}
+#community #content .colLeft .faButtons .submitYour a:hover {
+    background: url(https://hypopenguin.com/images/button_submityour_com.gif) 0 -32px no-repeat;
+    width: 133px;
+    height: 32px;
+}
+#community #content .colRight .seeMoreB a, #community #content .colRight .seeMoreB a:link, #community #content .colRight .seeMoreB a:visited {
+    display: block;
+    width: 82px;
+    height: 32px;
+    background: url(https://hypopenguin.com/images/button_seemore.gif) no-repeat;
+    margin: 10px 0;
+    padding: 0;
+    border: 0;
+}
+#community #content .colRight .seeMoreB a:hover {
+    background: url(https://hypopenguin.com/images/button_seemore.gif) 0 -32px no-repeat;
+    width: 82px;
+    height: 32px;
+}
+#community #content .colRight .downloads a, #community #content .colRight .downloads a:link, #community #content .colRight .downloads a:visited {
+    display: block;
+    width: 96px;
+    height: 32px;
+    background: url(https://hypopenguin.com/images/button_downloads.gif) no-repeat;
+    margin: 10px 0;
+    padding: 0;
+    border: 0;
+}
+#community #content .colRight .downloads a:hover {
+    background: url(https://hypopenguin.com/images/button_downloads.gif) 0 -32px no-repeat;
+    width: 96px;
+    height: 32px;
+}
+#community #content .colLeft .readMore a, #community #content .colLeft .readMore a:link, #community #content .colLeft .readMore a:visited {
+    display: block;
+    width: 136px;
+    height: 46px;
+    background: url(https://hypopenguin.com/images/button_readmore.gif) no-repeat;
+    margin: 10px 0;
+    padding: 0;
+    border: 0;
+}
+#community #content .colLeft .readMore a:hover {
+    background: url(https://hypopenguin.com/images/button_readmore.gif) 0 -46px no-repeat;
+    width: 136px;
+    height: 46px;
+}
+#community #content .colLeft .getIdeas a, #community #content .colLeft .getIdeas a:link, #community #content .colLeft .getIdeas a:visited {
+    display: block;
+    width: 86px;
+    height: 32px;
+    background: url(https://hypopenguin.com/images/button_getideas.gif) no-repeat;
+    margin: 10px 0;
+    padding: 0;
+    border: 0;
+}
+#community #content .colLeft .getIdeas a:hover {
+    background: url(https://hypopenguin.com/images/button_getideas.gif) 0 -32px no-repeat;
+    width: 86px;
+    height: 32px;
+}
+#community #content .colLeft .howToDraw a, #community #content .colLeft .howToDraw a:link, #community #content .colLeft .howToDraw a:visited {
+    display: block;
+    width: 109px;
+    height: 32px;
+    background: url(https://hypopenguin.com/images/button_howtodraw.gif) no-repeat;
+    margin: 10px 0;
+    padding: 0;
+    border: 0;
+}
+#community #content .colLeft .howToDraw a:hover {
+    background: url(https://hypopenguin.com/images/button_howtodraw.gif) 0 -32px no-repeat;
+    width: 109px;
+    height: 32px;
+}
+#community .banner123 {
+    margin-right: auto;
+    margin-left: auto;
+    background-color: #069;
+    display: inline;
+    width: 50px;
+    height: 50px;
+}
+#community .pen_time {
+    margin-top: -82px;
+    width: 332px;
+    margin-bottom: 20px;
+    height: 100%}
+#community .featured_igloo {
+    height: 104px;
+    width: 138px;
+    float: left;
+    margin-right: 9px;
+    margin-top: 82px;
+    background-image: url(https://hypopenguin.com/images/penguin_of_the_week.png);
+}
+#community .featured_igloo img {
+    position: relative;
+    height: 65px;
+    width: 110px;
+    margin-top: 27px;
+    margin-right: auto;
+    margin-left: 12px;
+    border: 2px solid #82bffd!important;
+    background-color: #017ac7;
+}
+#community .featured_igloo a:hover img {
+    border: 2px solid #00529b!important;
+}
+#community .igloo_time {
+    background: url(https://hypopenguin.com/images/clock_blue3.gif) no-repeat;
+    width: 185px;
+    margin-bottom: 20px;
+    float: right;
+    height: 185px;
+    position: relative;
+    display: block;
+}
+.size-full {
+    width: 100%;
+    height: auto;
+}
+.nav-next, .nav-previous {
+    width: 40%;
+    font-family: Burbank Small Bold, Helvetica, Arial, sans-serif;
+}
+.nav-next {
+    text-align: left;
+    float: left;
+}
+.nav-previous {
+    text-align: right;
+    float: right;
+}
+#community #content .colRight #dow {
+    font-size: 14px;
+    font-family: Burbank Small Bold, Helvetica, Arial, sans-serif;
+    text-align: center;
+    color: #fff;
+    padding-top: 7px;
+    width: 185px;
+    margin: 9px 0 0;
+}
+#community #content .colRight .penguinPoll {
+    display: block;
+    position: relative;
+}
+#community #content .colRight .penguinPoll a, #community #content .colRight .penguinPoll a:link, #community #content .colRight .penguinPoll a:visited {
+    display: block;
+    width: 332px;
+    height: 126px;
+    background: url(https://hypopenguin.com/images/button_poll_full.gif) no-repeat;
+    margin: 34px 0 10px;
+    border: 0;
+}
+#community #content .colRight .penguinPoll a:hover {
+    background: url(https://hypopenguin.com/images/button_poll_full.gif) 0 -126px no-repeat;
+    width: 332px;
+    height: 126px;
+}
+#community .ninja-banner {
+    margin: 5px 0 15px 29px;
+}
+#community .wallpaper_button {
+    padding-left: 20px;
+}
+#community #content .colRight .goNow a, #community #content .colRight .goNow a:link, #community #content .colRight .goNow a:visited {
+    display: block;
+    width: auto;
+    height: 21px;
+    padding: 0;
+    border: 0;
+    font-weight: 700;
+    background-color: transparent;
+    background-image: url(https://hypopenguin.com/images/arrow_rollover.gif);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    margin: 0 0 10px 190px;
+}
+#community #content .colRight .goNow a:hover {
+    width: auto;
+    height: 21px;
+    color: #021d3c;
+    background-color: transparent;
+    background-image: url(https://hypopenguin.com/images/arrow_rollover.gif);
+    background-repeat: no-repeat;
+    background-position: 0 -21px;
+}
+.regButton {
+    font-family: FaceFront;
+    background-color: #ffb409;
+    border: 3px solid #d88200;
+    border-radius: 20px;
+    color: #fff;
+    font-size: 8pt;
+    padding: 10px 20px;
+    margin: 20px;
+    text-shadow: #000 0 0 4px, #000 0 0 4px, #000 0 0 4px, #000 0 0 4px, #000 0 0 4px, #000 0 0 4px;
+}
+#errorBox, #successBox {
+    border-radius: 18px;
+    border-style: solid;
+    padding: 10px;
+}
+#errorBox {
+    border-color: #d98507;
+    background: #ff9a00;
+}
+#successBox {
+    border-color: #00529b;
+    background: #0280cd;
+}
+#community #content .colRight .goNow .btnTxt {
+    display: block;
+    margin: 0 0 0 40px;
+    padding: 3px 0 0;
+    width: auto;
+}
+, #community #content .colLeft .goNowYel a, #community #content .colLeft .goNowYel a:link, #community #content .colLeft .goNowYel a:visited {
+    display: block;
+    width: auto;
+    height: 32px;
+    background: url(https://hypopenguin.com/images/button_gonow.gif) no-repeat;
+    margin: 10px 0;
+    padding: 0;
+    border: 0;
+    color: #f90;
+    font-weight: 700;
+}
+#community #content .colLeft .goNowYel a:hover {
+    background: url(https://hypopenguin.com/images/button_gonow.gif) 0 -32px no-repeat;
+    width: auto;
+    height: 32px;
+    color: #7ca1c8;
+}
+#community #content .colLeft .goNowYel .btnTxt {
+    display: block;
+    margin: 0 0 0 47px;
+    padding: 5px 0 0;
+    width: auto;
+}
+#community .goNowOrg a, #community .goNowOrg a:link, #community .goNowOrg a:visited {
+    float: left;
+    display: block;
+    width: auto;
+    height: 27px;
+    background: url(https://hypopenguin.com/images/gonow_org.gif) no-repeat;
+    margin: 8px 0 10px;
+    padding: 0;
+    border: 0;
+    color: #01539c;
+    font-weight: 700;
+    font-size: 13px;
+}
+#community .goNowOrg a:hover {
+    background: url(https://hypopenguin.com/images/gonow_org.gif) 0 -27px no-repeat;
+    width: auto;
+    height: 27px;
+    color: #f90;
+}
+#community .goNowOrg .btnTxt {
+    display: block;
+    margin: 0 0 0 40px;
+    padding: 6px 0 0;
+    width: auto;
+    font-size: 12px;
+}
+#community_inside .goNowOrg a, #community_inside .goNowOrg a:link, #community_inside .goNowOrg a:visited {
+    float: right;
+    display: block;
+    width: auto;
+    height: 27px;
+    background: url(https://hypopenguin.com/images/gonow_org.gif) no-repeat;
+    margin: 8px 0 10px;
+    padding: 0;
+    border: 0;
+    color: #01539c;
+    font-weight: 700;
+    font-size: 13px;
+}
+#community_inside .goNowOrg a:hover {
+    background: url(https://hypopenguin.com/images/gonow_org.gif) 0 -27px no-repeat;
+    width: auto;
+    height: 27px;
+    color: #f90;
+}
+#community_inside .goNowOrg .btnTxt {
+    display: block;
+    margin: 0 0 0 39px;
+    padding: 6px 0 0;
+    width: auto;
+}
+#community #content .tutorials a, #community #content .tutorials a:link, #community #content .tutorials a:visited {
+    display: block;
+    width: 85px;
+    height: 32px;
+    background: url(https://hypopenguin.com/images/button_tutorials.gif) no-repeat;
+    padding: 0;
+    border: 0;
+    margin-top: 10px;
+}
+#community #content .tutorials a:hover {
+    background: url(https://hypopenguin.com/images/button_tutorials.gif) 0 -32px no-repeat;
+    width: 85px;
+    height: 32px;
+}
+#community #content .faq a, #community #content .faq a:link, #community #content .faq a:visited {
+    display: block;
+    width: 50px;
+    height: 32px;
+    background: url(https://hypopenguin.com/images/button_faq.gif) no-repeat;
+    padding: 0;
+    border: 0;
+    margin-top: 10px;
+}
+#community #content .faq a:hover {
+    background: url(https://hypopenguin.com/images/button_faq.gif) 0 -32px no-repeat;
+    width: 50px;
+    height: 32px;
+}
+#community #content .techQuestions a, #community #content .techQuestions a:link, #community #content .techQuestions a:visited {
+    display: block;
+    width: 124px;
+    height: 32px;
+    background: url(https://hypopenguin.com/images/button_techquestions.gif) no-repeat;
+    padding: 0;
+    border: 0;
+    margin-top: 10px;
+}
+#community #content .techQuestions a:hover {
+    background: url(https://hypopenguin.com/images/button_techquestions.gif) 0 -32px no-repeat;
+    width: 124px;
+    height: 32px;
+}
+#community #content .contactUs a, #community #content .contactUs a:link, #community #content .contactUs a:visited {
+    display: block;
+    width: 98px;
+    height: 32px;
+    background: url(https://hypopenguin.com/images/button_contactus.gif) no-repeat;
+    padding: 0;
+    border: 0;
+    margin-top: 10px;
+}
+#community #content .contactUs a:hover {
+    background: url(https://hypopenguin.com/images/button_contactus.gif) 0 -32px no-repeat;
+    width: 98px;
+    height: 32px;
+}
+#community_inside .fanart {
+    position: relative;
+    margin-bottom: 50px;
+    padding-bottom: 50px;
+}
+#community_inside #btop a {
+    display: block;
+    width: 174px;
+    height: 40px;
+    float: right;
+    background-image: url(https://hypopenguin.com/images/button_backtop.gif);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    margin: 30px 0 30px 30px;
+}
+#community_inside #btop a:active, #community_inside #btop a:hover, #community_inside_funact #comicarchive a:hover {
+    background-position: 0 -40px;
+}
+#fanart {
+    width: 100%;
+    height: 30px;
+    margin: 5px auto;
+}
+#community_inside .submit-art, .modal #fanart .submit-art {
+    font-family: "Burbank Small Bold", Helvetica, Arial, sans-serif;
+    display: inline-block;
+    float: right;
+}
+.modal #fanart .submit-art {
+    float: none;
+}
+#community_inside .box_inside_patw {
+    margin-top: -30px;
+    width: 841px;
+    height: 227px;
+    background-image: url(https://hypopenguin.com/images/box_inside_patw.gif);
+}
+#community_inside .box_inside_fanart {
+    width: 841px;
+    height: 227px;
+    background-image: url(https://hypopenguin.com/images/box_inside_fanart.gif);
+}
+#community_inside .box_inside_fanart .title, #community_inside .box_inside_patw .title {
+    position: relative;
+    top: 50px;
+    left: 20px;
+}
+#community_inside .box_inside_fanart .description, #community_inside .box_inside_patw .description {
+    position: relative;
+    width: 645px;
+    top: 55px;
+    right: 200px;
+    left: 20px;
+}
+#community_inside .box_inside_patw .click_txt {
+    position: absolute;
+    top: 270px;
+    left: 85px;
+    font-size: 12px;
+    color: #01539c;
+}
+#community_inside .box_inside_fanart .click_txt {
+    position: absolute;
+    top: 795px;
+    left: 85px;
+    font-size: 12px;
+    color: #01539c;
+}
+#community_inside .thumbs_group {
+    width: 841px;
+    height: 300px;
+}
+#community_inside .back_right {
+    text-align: right;
+    float: right;
+    font-weight: 700;
+}
+.draw li.larger, .draw_color li {
+    list-style: none;
+    text-align: center;
+}
+#community_inside .fifty {
+    float: left;
+    width: 45%}
+#community_inside_funact #offline-interface {
+    width: 845px;
+    height: 445px;
+}
+#community_inside_funact .fa_title {
+    margin: 35px 0 5px;
+    width: 839;
+    height: 41px;
+}
+#community_inside_funact #coming-soon-box {
+    background-image: url(https://hypopenguin.com/images/funactivities-coming-soon-box.gif);
+    width: 839px;
+    height: 200px;
+    margin-top: 10px;
+}
+#community_inside_funact #coming-soon-box img {
+    float: left;
+    margin: 15px 0 0 35px;
+}
+#community_inside_funact #coming-soon-info {
+    float: left;
+    margin: 25px 0 0 35px;
+    width: 530px;
+}
+#community_inside_funact #comicarchive a {
+    display: block;
+    width: 275px;
+    height: 28px;
+    float: right;
+    background-image: url(https://hypopenguin.com/images/button_comicArchive.gif);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    outline: 0;
+    margin: 3px 6px 3px 3px;
+}
+#community_inside_funact #comicarchive a:hover {
+    background-position: 0 -28px;
+}
+#community .box332b .header h5 {
+    color: #00529b;
+    font-size: 15px;
+    font-weight: 700;
+    margin: 0 0 10px;
+}
+#community_inside_funact .padd {
+    height: 1360px;
+}
+.draw li.larger {
+    float: left;
+    height: 246px;
+    width: 277px;
+    padding: 8px 5px 10px 10px;
+}
+.draw_color li {
+    float: left;
+    height: 115px;
+    width: 130px;
+    padding: 8px 5px 10px 1px;
+}
+.draw, .draw_color {
+    width: 842px;
+    height: 371px;
+}
+.draw {
+    margin-left: -5px;
+    background: url(https://hypopenguin.com/images/funactivities_page_penguin.gif) top right no-repeat;
+}
+ul.draw li a img, ul.draw_color li a img {
+    border: 2px solid #abd4fd!important;
+}
+ul.draw li a:hover img, ul.draw_color li a:hover img {
+    border: 2px solid #538abb!important;
+}
+ul.pictures li a img {
+    border: 2px solid #abd4fd!important;
+    height: 100%;
+    width: 100%}
+#offlineActivities, #onlineActivities {
+    width: 354px;
+    height: 221px;
+    margin-bottom: 33px;
+}
+ul#offlinelist li a, ul#offlinelist li a:hover {
+    width: 64px;
+    height: 66px;
+    background-repeat: no-repeat;
+}
+ul.pictures li a:hover img {
+    border: 2px solid #538abb!important;
+}
+#onlineActivities {
+    float: left;
+    margin-left: 38px;
+}
+#offlineActivities {
+    float: right;
+    margin-right: 45px;
+}
+ul#onlinelist {
+    padding: 0;
+    margin: 47px 0 0 18px;
+    list-style-type: none;
+    float: left;
+    width: 100%;
+    color: #fff;
+}
+ul#offlinelist li, ul#onlinelist li {
+    display: inline;
+}
+ul#onlinelist li a {
+    float: left;
+    color: #fff;
+    padding: 0 4px 8px 5px;
+    text-decoration: none;
+    background-image: url(https://hypopenguin.com/images/button_week_inactive.gif);
+    background-repeat: no-repeat;
+    width: 46px;
+    height: 48px;
+}
+ul#onlinelist li a img {
+    margin: 7px 0 0 3px;
+}
+ul#onlinelist li a:hover {
+    background-image: url(https://hypopenguin.com/images/button_week_hover.gif);
+    background-repeat: no-repeat;
+    width: 46px;
+    height: 48px;
+}
+ul#offlinelist {
+    padding: 0;
+    margin: 53px 0 0 22px;
+    list-style-type: none;
+    float: left;
+    width: 100%;
+    color: #fff;
+}
+ul#offlinelist li a {
+    float: left;
+    color: #fff;
+    padding: 0 14px 15px 4px;
+    text-decoration: none;
+    background-image: url(https://hypopenguin.com/images/button_dblweek_inactive.gif);
+    outline: 0;
+}
+ul#offlinelist li a img {
+    margin: 10px 0 0 3px;
+}
+ul#offlinelist li a:hover {
+    background-image: url(https://hypopenguin.com/images/button_dblweek_hover.gif);
+}
+.floatHack {
+    clear: both;
+    height: 0;
+    margin: 0;
+    padding: 0;
+    border: none;
+    width: 100%;
+    visibility: hidden;
+}
+#community_inside .thumbnails img {
+    height: 115px;
+    width: 130px;
+}
+#community_inside .thumbnails, #community_inside .thumbnails_close, #community_inside .thumbnails_no_text {
+    width: 132px;
+    text-align: center;
+    text-decoration: none;
+    position: relative;
+}
+#community_inside .thumbnails_no_text {
+    float: left;
+    height: 137px;
+    margin-bottom: 20px;
+    margin-right: 5px;
+    display: block;
+}
+#community_inside .thumbnails_close {
+    float: left;
+    height: 115px;
+    margin-left: 9px;
+    margin-bottom: 12px;
+    display: block;
+}
+#community_inside .thumbnails_close img, #community_inside .thumbnails_no_text img {
+    display: inline;
+    float: none;
+    background-color: #82bffd;
+    padding: 2px;
+}
+#community_inside .thumbnails_close a:hover img, #community_inside .thumbnails_no_text a:hover img {
+    display: inline;
+    float: none;
+    background-color: #00529b;
+}
+#community_inside .thumbnails {
+    height: 157px;
+    margin-bottom: 20px;
+    margin-right: 5px;
+    display: inline-block;
+}
+#community_inside .thumbnails img {
+    display: inline;
+    float: none;
+    background-color: #82bffd;
+    padding: 2px;
+    margin-bottom: 10px;
+}
+#community_inside .thumbnails a:hover img {
+    display: inline;
+    float: none;
+    background-color: #00529b;
+}
+.pictures li, .pictures li.larger {
+    float: left;
+    list-style: none;
+    text-align: center;
+}
+#community_inside .thumbnails_fan_banner {
+    margin-left: 60px;
+}
+.pictures li.larger {
+    height: 246px;
+    width: 277px;
+    padding: 8px 10px 10px;
+}
+.pictures li {
+    height: 115px;
+    width: 130px;
+    padding: 8px 3px;
+}
+.pictures {
+    margin-left: -5px;
+    width: 842px;
+    clear: both;
+}
+#community_inside .thumbnails_fan_banner {
+    float: none;
+    height: 200px;
+    width: 350px;
+    margin-bottom: 20px;
+    text-decoration: none;
+    display: inline-block;
+    text-align: left;
+    position: relative;
+}
+#community_inside .thumbnails_fan_banner img {
+    display: inline;
+    float: none;
+    margin-bottom: 10px;
+}
+#community_inside .banner {
+    padding: 3px;
+    border-width: thin;
+    border-style: solid;
+    border-color: #ccc #666 #666 #ccc;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 9px;
+}
+#community_inside .next_section {
+    height: 157px;
+    width: auto;
+}
+#community_inside .next_section_divider {
+    width: auto;
+    font-size: 0;
+    height: 50px;
+}
+.nostylewhite {
+    color: #fff!important;
+    text-decoration: none!important;
+}
+input[type=radio] {
+    position: absolute;
+    visibility: hidden;
+}
+.colorLabel {
+    display: inline-block;
+    position: relative;
+    height: 30.7px;
+    width: 30.7px;
+    border-radius: 5px;
+    border: 2px solid #000;
+    outline: 0;
+}
+input[type=radio]:checked+.colorLabel {
+    border: 2px solid #ffbc3a;
+}
+.colorRadio {
+    position: absolute;
+    right: -10000px;
+}
+.myPenguin {
+    background-color: #036;
+    background-image: url(https://hypopenguin.com/img/penguin.png);
+    width: 178px;
+    height: 199px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    position: relative;
+    margin-left: 10px;
+}
+.default-btn, a.regButton {
+    font-family: "Burbank Small Bold", Helvetica, Arial, sans-serif;
+    background-color: #ffb409;
+    border: 3px solid #d88200;
+    border-radius: 15px;
+    color: #fff!important;
+    font-size: 15px;
+    display: inline-block;
+    padding: 10px 20px;
+    text-shadow: #000 0 0 2px, #000 0 0 2px, #000 0 0 2px, #000 0 0 2px, #000 0 0 2px, #000 0 0 2px, #000 0 0 2px, #000 0 0 2px, #000 0 0 2px, #000 0 0 2px, #000 0 0 2px, #000 0 0 2px, #000 0 0 2px, #000 0 0 2px, #000 0 0 2px, #000 0 0 2px, #000 0 0 2px, #000 0 0 2px, #000 0 0 2px, #000 0 0 2px, #000 0 0 2px, #000 0 0 2px, #000 0 0 2px, #000 0 0 2px, #000 0 0 2px, #000 0 0 2px, #000 0 0 2px, #000 0 0 2px, #000 0 0 2px, #000 0 0 2px, #000 0 0 2px, #000 0 0 2px, #000 0 0 2px, #000 0 0 2px, #000 0 0 2px, #000 0 0 2px, #000 0 0 2px, #000 0 0 2px, #000 0 0 2px, #000 0 0 2px, #000 0 0 2px, #000 0 0 2px, #000 0 0 2px, #000 0 0 2px, #000 0 0 2px, #000 0 0 2px;
+}
+#passwordTips .title, .checkbox-label, .create-penguin-wrapper label.default-label {
+    font-family: Burbank Small Bold, Helvetica, Arial, sans-serif;
+}
+a.regButton {
+    margin: 20px;
+    border-radius: 20px;
+    font-size: 8pt;
+}
+.regContent {
+    background-color: #fffbca;
+    border-radius: 20px;
+    border: 2px solid #ffbc3a;
+    padding-top: 30px;
+}
+.createContent {
+    display: none;
+}
+#container div, #containerPenguin div {
+    margin: 20px;
+    float: left;
+    height: 150px;
+    width: 345px;
+}
+#container img {
+    margin-top: 10px;
+    margin-left: 20px;
+    float: right;
+}
+#container h3 {
+    margin-bottom: 20px!important;
+}
+#container {
+    width: 800px;
+}
+#penguinFormImagery {
+    width: 200px;
+    float: left;
+    margin-left: 90px;
+    margin-right: 120px;
+}
+#penguinForm {
+    float: left;
+}
+#penguinName {
+    text-align: center;
+}
+#passwordTips {
+    font-size: 14px;
+    margin: 15px auto auto;
+}
+#passwordTips .title {
+    color: #00529b;
+    margin: auto auto 5px;
+    display: inline-block;
+}
+.create-penguin-wrapper {
+    display: flex;
+    min-height: 503px;
+    position: relative;
+    margin: 60px auto auto;
+    flex-direction: column;
+}
+.create-penguin-wrapper form {
+    display: flex;
+}
+.create-penguin-wrapper ul {
+    list-style: disc;
+}
+.create-penguin-wrapper label.default-label {
+    font-size: 15.5px;
+    display: block;
+    margin: auto auto 5px;
+}
+.create-penguin-wrapper label[for] {
+    cursor: pointer;
+}
+.create-penguin-wrapper input:not([type=submit]) {
+    width: 100%;
+    margin: 3px auto;
+}
+.create-penguin-wrapper input.large-input {
+    height: 50px;
+    font-size: 20px;
+}
+.create-penguin-container {
+    flex: 1;
+    margin: 0 10px;
+}
+.create-penguin-container:first-of-type {
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+.create-penguin-container:nth-of-type(2) {
+    margin: 20px 0 0 50px;
+}
+.create-penguin-container:first-of-type ul, .small-create-text {
+    margin: 10px auto auto;
+    font-size: 12px;
+    font-family: Burbank Small Bold, Helvetica, Arial, sans-serif;
+}
+#passwordTips ul, .create-penguin-container:first-of-type ul {
+    margin-left: 15px;
+}
+.checkbox-area {
+    margin: 10px auto auto;
+}
+.form-section {
+    margin: auto auto 30px;
+    position: relative;
+}
+.form-section input[type=checkbox] {
+    position: absolute;
+    visibility: hidden;
+    display: none;
+}
+.hypopenguin-checkbox {
+    height: 19px;
+    width: 19px;
+    display: inline-block;
+    margin: auto 5px auto auto;
+    border: 2px solid #e1e1e1;
+    border-radius: 8px;
+    vertical-align: middle;
+    cursor: pointer;
+    outline: 0;
+}
+.form-section input[type=checkbox]:checked+.hypopenguin-checkbox {
+    background-image: url(https://hypopenguin.com/img/check.jpg);
+    background-size: 90%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.create-penguin-wrapper .checkboxs {
+    margin: 20px auto auto;
+}
+.create-penguin-container:first-of-type .form-section:first-of-type, .form-section.captcha {
+    margin: auto;
+}
+.checkbox-label {
+    vertical-align: middle;
+    font-size: 13px;
+}
+.create-submit, .form-step {
+    font-size: 22px;
+    position: absolute;
+}
+.checkbox-link {
+    color: #0196f0;
+}
+.comment-notice, .create-response, .form-step {
+    color: #fff;
+    text-align: center;
+    font-family: Burbank Small Bold, Helvetica, Arial, sans-serif;
+}
+.form-step {
+    height: 45px;
+    width: 45px;
+    line-height: 45px;
+    background: url(https://hypopenguin.com/img/step.png) center/contain no-repeat;
+    top: -18px;
+    left: -62px;
+}
+.form-section.create-colours .form-step {
+    top: -40px;
+}
+.form-section.large .form-step {
+    height: 55px;
+    width: 55px;
+    line-height: 55px;
+    top: -90px;
+    left: -76px;
+}
+.form-section.captcha .g-recaptcha {
+    height: 78px;
+    width: 304px;
+    transform: scale(.912);
+}
+.form-step:after {
+    content: '.'}
+.create-submit {
+    height: 55px;
+    width: auto;
+    background-size: 2px 58px;
+    margin: 30px 0 0;
+    right: 0;
+    bottom: 0;
+}
+.create-data-box {
+    display: block;
+}
+.comment-notice, .create-response {
+    width: 100%;
+    background-color: #fffbca;
+    border-radius: 12px;
+    border: 2px solid #ffbc3c;
+    margin: auto auto 30px;
+    padding: 15px 10px;
+    box-sizing: border-box;
+    display: none;
+}
+.create-response#errorBox {
+    border-color: #ffbc3a;
+    background: #fff;
+    color: red;
+}
+.comment, .comment a {
+    color: #007aa3;
+}
+.comment-queued, .create-response#successBox {
+    border-color: #00529b;
+    background: #0280cd;
+}
+.create-response #errormsg, .create-response #successmsg {
+    text-align: center;
+}
+.create-penguin {
+    height: 350px;
+    width: 100%;
+    background: url(https://hypopenguin.com/img/create-penguin.png) center/cover no-repeat #02a797;
+    margin: auto auto 30px;
+}
+.comment-submit {
+    margin: 20px 0;
+    background: url(https://hypopenguin.com/img/button_blogsubmit.gif) center/contain no-repeat;
+    height: 50px;
+    width: 90px;
+    outline: 0;
+    border: none;
+    font-size: 0;
+    cursor: pointer;
+}
+.comment-count-text {
+    text-align: center;
+    display: block;
+    position: relative;
+}
+.comment-count-text:after {
+    content: '';
+    display: block;
+    position: absolute;
+    right: 0;
+    bottom: -12px;
+    left: 0;
+    margin: auto;
+    width: 10%;
+    height: 3.5px;
+    background: #00529b;
+}
+.comment, .comment-data, .comment-main {
+    display: flex;
+}
+#cancel-comment-reply-link {
+    height: 42px;
+    line-height: 42px;
+    margin: 0 0 0 5px;
+}
+.comment {
+    height: auto;
+    padding: 20px;
+    background: #eef7ff;
+    border-radius: 5px;
+    margin: 15px 0;
+    flex-direction: column;
+}
+.comment.depth-2 {
+    margin: 20px 0 0 20px;
+}
+.comment.depth-3 {
+    margin: 20px 0 0 40px;
+}
+.comment.depth-4 {
+    margin: 20px 0 0 60px;
+}
+.comment.depth-5 {
+    margin: 20px 0 0 80px;
+}
+.comment.depth-6 {
+    margin: 20px 0 0 100px;
+}
+.comments-open {
+    padding: 4px 0 10px;
+    font-weight: 700;
+    font-size: 12px;
+    color: #7b7b7b;
+}
+.comment-data {
+    margin: 0 20px 0 0;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    font-family: Burbank Small Bold, Helvetica, Arial, sans-serif;
+    justify-content: center;
+}
+.comment-main-content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.blog-avatar, .comment-avatar {
+    height: 60px;
+    width: 60px;
+    background: center -18px/114px auto no-repeat #fff;
+    border-radius: 50%;
+    border: 3px solid #007aa3;
+}
+.comment-avatar {
+    margin: 0 0 10px;
+}
+.blog_entry .blog-avatar {
+    display: inline-block;
+    margin-right: 15px;
+    vertical-align: middle;
+}
+.blog_entry .blog-header-thumb {
+    width: 900px;
+    height: 300px;
+    background: center/cover #fff;
+    margin: -122px 0 30px -30px;
+    position: relative;
+}
+.blog_entry .blog-header-thumb:after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    background-image: -moz-linear-gradient(270deg, transparent 0, #fff 100%);
+    background-image: -webkit-linear-gradient(270deg, transparent 0, #fff 100%);
+    background-image: linear-gradient(-180deg, transparent 0, #fff 100%);
+}
+.blog_entry .blog-header-thumb .blog-header-inner {
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    position: absolute;
+    padding: 14px 30px 0 0;
+    box-sizing: border-box;
+}
+.blog_entry .blog-header-thumb .blog-header-inner:after {
+    content: '';
+    width: 400px;
+    height: 400px;
+    background: radial-gradient(closest-side, #fff, transparent);
+    position: absolute;
+    top: -190px;
+    right: -190px;
+    z-index: -1;
+}
+.blog_entry .blog-header-thumb .blog-header-inner h3 {
+    color: #00529b!important;
+}
+.comment.byuser .comment-avatar, .comment.moderator .comment-avatar {
+    border-color: #fff;
+}
+.comment-edit-link, .comment-header-meta, .comment-like-link, .comment-reply-link {
+    color: #007aa3;
+    font-family: Burbank Small Bold, Helvetica, Arial, sans-serif;
+}
+.comment-reply-link {
+    color: #007aa3!important;
+}
+.comment-like-link.liked {
+    color: #c83a3a!important;
+}
+.comment.comment-byuser .comment-like-link.liked, .comment.moderator .comment-like-link.liked {
+    color: #ffe9ec!important;
+}
+.comment-edit-link, .comment-header-date {
+    float: right;
+    color: #9cbfde!important;
+}
+.comment-edit-link {
+    margin: auto 10px auto auto;
+}
+.comment-header {
+    margin: 0 0 10px;
+}
+.comment-date {
+    margin-top: 10px;
+    color: #858585;
+    font-size: 10px;
+}
+.comment.byuser, .comment.moderator {
+    background: #009ee4;
+}
+.comment.byuser, .comment.byuser .comment-header-date, .comment.byuser .comment-header-meta, .comment.moderator, .comment.moderator .comment-header-date, .comment.moderator .comment-header-meta {
+    color: #fff;
+}
+.comment.byuser .comment-edit-link, .comment.byuser .comment-header-date, .comment.byuser a, .comment.moderator .comment-edit-link, .comment.moderator .comment-header-date, .comment.moderator a {
+    color: #003f72!important;
+}
+.comment .comment-content {
+    flex: 1;
+}
+.comment .comment-links {
+    margin: 10px 0 0;
+}
+.comment .reply-link {
+    background: url(https://hypopenguin.com/img/icon-comments.png) no-repeat;
+    padding: 0 0 0 30px;
+    margin: 0 22px 0 0;
+}
+.comment.byuser .reply-link, .comment.moderator .reply-link {
+    background-position: 0 -30px;
+}
+.comment .reply-link.like-link {
+    background: url(https://hypopenguin.com/img/comment-heart-icon.png) 0 -66px/16.5px no-repeat;
+}
+.comment .liked .reply-link.like-link {
+    background-position: 0 -33px;
+}
+.comment.byuser .reply-link.like-link, .comment.moderator .reply-link.like-link {
+    background-position: 0 0;
+}
+.comment.byuser .liked .reply-link.like-link, .comment.moderator .liked .reply-link.like-link {
+    background-position: 0 -16px;
+}
+.comment-container-wrap {
+    margin: 55px auto auto;
+}
+.comment-respond {
+    margin: 35px auto auto;
+    display: flex;
+}
+.comment-form {
+    flex: 1;
+    order: 2;
+}
+.comment-form-main {
+    position: relative;
+}
+.comment-respond .comment-data {
+    flex-direction: column;
+}
+.comment-respondd .comment-header-meta {
+    text-align: center;
+}
+.comment-respond .comment-avatar {
+    margin: auto auto 10px;
+}
+textarea.comment-field {
+    min-height: 165px;
+    min-width: 100%;
+    width: 100%;
+    resize: none;
+    margin-top: 0;
+}
+.comment-char-count {
+    position: absolute;
+    top: -22px;
+    right: 0;
+    font-size: 14px;
+}
+.comment-char-count.max-count {
+    color: red;
+    font-family: Burbank Small Bold, Helvetica, Arial, sans-serif;
+}
+.comment .like-icon.like-icon-comment {
+    width: 30px;
+    height: 30px;
+    margin: -4px 0 0 10px;
+}
+.login-box.loggedin {
+    min-height: 221px;
+}
+.login-box.loading {
+    min-height: 80px;
+}
+.login-box.loggedin.loading {
+    display: grid;
+    align-items: center;
+}
+.login-container {
+    margin: 30px auto auto;
+}
+.login-container .login-text {
+    margin: auto auto 7px!important;
+}
+.login-form-main {
+    display: flex;
+    justify-content: space-between;
+}
+.login-form .hypopenguin-button {
+    margin: 0 8px 0 12px;
+}
+.form-submit .hypopenguin-button {
+    margin: 0;
+    float: none;
+    border-radius: 8px!important;
+    padding: 2px 20px 0!important;
+}
+.login-form input:not([type=submit]) {
+    margin: auto 8px auto auto;
+    flex: 1;
+}
+.login-form .link-container {
+    margin: 15px 101px auto auto;
+    display: flex;
+    justify-content: flex-end;
+}
+.login-form .form-subtext {
+    color: #007aa3;
+    font-family: Burbank Small Bold, Helvetica, Arial, sans-serif;
+    display: inline-block;
+    margin: 0 0 0 20px;
+}
+.form-data {
+    flex-basis: 11.5%}
+.archive-list {
+    font-family: "Burbank Small Bold", Helvetica, Arial, sans-serif;
+}
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 2px solid #ffb01b;
+    margin: 25px;
+    padding: 0;
+}
+.paddingH3 {
+    margin-left: 20px;
+}
+.paddingH3Remove {
+    margin-bottom: 0!important;
+}
+.blog_icon {
+    background: url(https://hypopenguin.com/img/blog_image.jpg) center/contain no-repeat;
+    width: 60px;
+    height: 60px;
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 20px 0 0;
+}
+.like-icon {
+    height: 45px;
+    width: 45px;
+    background: url(https://hypopenguin.com/img/heart-icon-outline-up.png) center 0/90% no-repeat;
+    display: inline-block;
+    float: right;
+    cursor: pointer;
+    position: relative;
+}
+.like-count, .liked-text-pop {
+    font-size: 20px;
+    position: absolute;
+    text-align: center;
+    font-family: "Burbank Small Bold", Helvetica, Arial, sans-serif;
+}
+.like-icon.liked, .like-icon:before {
+    content: '';
+    background-image: url(https://hypopenguin.com/img/heart-icon.png);
+}
+.liked-text-pop {
+    width: 100%;
+    color: #fff;
+    text-shadow: 0 4px #600;
+    display: none;
+}
+.liked-text-pop.playing {
+    -webkit-animation: likedTextPop 1s ease-in;
+    animation: likedTextPop 1s ease-in;
+    display: block;
+    opacity: 0;
+}
+.like-count {
+    color: #8e1c09;
+    bottom: -28px;
+    left: 0;
+    right: 0;
+}
+@-webkit-keyframes likedTextPop {
+    from {
+    bottom: 12px;
+    opacity: 1;
+}
+to {
+    bottom: 45px;
+    opacity: 0;
+}
+}@keyframes likedTextPop {
+    from {
+    bottom: 12px;
+    opacity: 1;
+}
+to {
+    bottom: 45px;
+    opacity: 0;
+}
+}.blog_entry {
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+.archive .title, .blog .title, .hypopenguin-title {
+    margin-bottom: 60px;
+    display: inline-block;
+}
+.blog_entry img {
+    height: auto;
+    border-radius: 5px;
+    max-width: 100%}
+#nav-below {
+    margin-top: 35px;
+}
+.loader-wrap .loader, .loader-wrap .loader:after, .loader-wrap .loader:before {
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    width: 2.5em;
+    height: 2.5em;
+    -webkit-animation: loaderAnim 1.8s infinite ease-in-out;
+    animation: loaderAnim 1.8s infinite ease-in-out;
+}
+.account-prompt-content .loader-wrap .loader, .account-prompt-content .loader-wrap .loader:after, .account-prompt-content .loader-wrap .loader:before {
+    -webkit-animation-name: loaderAnimWhite;
+    animation-name: loaderAnimWhite;
+}
+.account-prompt-content .loader-wrap {
+    margin: auto;
+}
+.blog .loader-wrap .loader {
+    margin: 30px auto;
+}
+.loader-wrap .loader {
+    position: relative;
+    margin: -30px auto auto;
+    font-size: 10px;
+    text-indent: -9999em;
+    -webkit-transform: translateZ(0);
+    -ms-transform: translateZ(0);
+    transform: translateZ(0);
+    -webkit-animation-delay: -.16s;
+    animation-delay: -.16s;
+}
+.loader-wrap .loader:before {
+    left: -3.5em;
+    -webkit-animation-delay: -.32s;
+    animation-delay: -.32s;
+}
+.loader-wrap .loader:after {
+    left: 3.5em;
+}
+.loader-wrap .loader:after, .loader-wrap .loader:before {
+    position: absolute;
+    top: 0;
+    content: ''}
+@-webkit-keyframes loaderAnim {
+    0%, 100%, 80% {
+    -moz-box-shadow: 0 2.5em 0 -1.3em #00529b;
+    -webkit-box-shadow: 0 2.5em 0 -1.3em #00529b;
+    box-shadow: 0 2.5em 0 -1.3em #00529b;
+}
+40% {
+    -moz-box-shadow: 0 2.5em 0 0 #00529b;
+    -webkit-box-shadow: 0 2.5em 0 0 #00529b;
+    box-shadow: 0 2.5em 0 0 #00529b;
+}
+}@keyframes loaderAnim {
+    0%, 100%, 80% {
+    -moz-box-shadow: 0 2.5em 0 -1.3em #00529b;
+    -webkit-box-shadow: 0 2.5em 0 -1.3em #00529b;
+    box-shadow: 0 2.5em 0 -1.3em #00529b;
+}
+40% {
+    -moz-box-shadow: 0 2.5em 0 0 #00529b;
+    -webkit-box-shadow: 0 2.5em 0 0 #00529b;
+    box-shadow: 0 2.5em 0 0 #00529b;
+}
+}@-webkit-keyframes loaderAnimWhite {
+    0%, 100%, 80% {
+    -moz-box-shadow: 0 2.5em 0 -1.3em #fff;
+    -webkit-box-shadow: 0 2.5em 0 -1.3em #fff;
+    box-shadow: 0 2.5em 0 -1.3em #fff;
+}
+40% {
+    -moz-box-shadow: 0 2.5em 0 0 #fff;
+    -webkit-box-shadow: 0 2.5em 0 0 #fff;
+    box-shadow: 0 2.5em 0 0 #fff;
+}
+}@keyframes loaderAnimWhite {
+    0%, 100%, 80% {
+    -moz-box-shadow: 0 2.5em 0 -1.3em #fff;
+    -webkit-box-shadow: 0 2.5em 0 -1.3em #fff;
+    box-shadow: 0 2.5em 0 -1.3em #fff;
+}
+40% {
+    -moz-box-shadow: 0 2.5em 0 0 #fff;
+    -webkit-box-shadow: 0 2.5em 0 0 #fff;
+    box-shadow: 0 2.5em 0 0 #fff;
+}
+}.underwater {
+    width: 257px;
+    height: 250.75px;
+    -webkit-animation: underwater 2s infinite ease-in-out, play-underwater .5s steps(3) infinite;
+    animation: underwater 2s infinite ease-in-out, play-underwater .3s steps(14) infinite;
+    animation-delay: 2s;
+    background: url(https://hypopenguin.com/img/underwater-sprite.jpg) center/256.25px 3259.75px;
+    position: absolute;
+    top: -200px;
+    right: 200px;
+}
+@-webkit-keyframes underwater {
+    0%, 100% {
+    transform: scaleY(1) translateY(0);
+}
+50% {
+    transform: scaleY(.96) translateY(-15px);
+}
+}@keyframes underwater {
+    0%, 100% {
+    transform: scaleY(1) translateY(0);
+}
+50% {
+    transform: scaleY(.96) translateY(-15px);
+}
+}@-webkit-keyframes play-underwater {
+    100% {
+    background-position-y: -250.75px;
+}
+}@keyframes play-underwater {
+    100% {
+    background-position-y: -3514px;
+}
+}.post-widgets {
+    width: 100%;
+    margin: -5px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: 1fr;
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    padding: 0 30px 0 0;
+    order: 1;
+    flex: 1;
+}
+.post-widgets.loading {
+    grid-template-columns: none;
+}
+.post-widget {
+    height: auto;
+    max-height: 260px;
+    width: auto;
+    display: inline-block;
+    background: rgba(0, 0, 0, .04);
+    border-radius: 12px;
+    position: relative;
+    vertical-align: top;
+    overflow: hidden;
+    border: 2px solid #eee;
+}
+.category-item.potw:hover, .post-widget.post-type-potw:hover, .post-widget:hover {
+    border-color: #82bffd;
+}
+.category-item.news:hover, .post-type-news.post-widget:hover {
+    border-color: #c9a6a6;
+}
+.category-item.videos:hover, .post-type-videos.post-widget:hover {
+    border-color: #ada6cd;
+}
+.category-item.sneak-peeks:hover, .post-type-sneak-peeks.post-widget:hover {
+    border-color: #80b589;
+}
+.category-item.reviewed-by-you:hover, .post-type-reviewed-by-you.post-widget:hover {
+    border-color: #efd4ca;
+}
+.post-widget .post-widget-link {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+.post-widget-header, .post-widget-image {
+    height: 150px;
+    width: 100%}
+.post-widget-image {
+    border-bottom: 2px solid #b53131;
+    background: center/cover no-repeat;
+}
+.post-widget.post-type-news .post-widget-image {
+    border-color: #b53131;
+}
+.post-widget.post-type-videos .post-widget-image {
+    border-color: #8378c3;
+}
+.post-widget.post-type-sneak-peeks .post-widget-image {
+    border-color: #177326;
+}
+.post-widget.post-type-reviewed-by-you .post-widget-image {
+    border-color: #efd4ca;
+}
+.post-widget.post-type-potw .post-widget-image {
+    border-color: #0186b1;
+}
+.post-hashtag {
+    display: inline-block;
+    margin: 0 5px 0 0;
+    text-transform: lowercase;
+    font-size: 15px;
+}
+.post-widget-bottom {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    line-height: 30%;
+    margin-top: -52px;
+    z-index: 0;
+    position: relative;
+}
+.post-widget-meta-bottom {
+    width: 100%;
+    padding: 25px 15px 15px;
+    box-sizing: border-box;
+    margin: -34px 0 0;
+    position: relative;
+}
+.post-widget-content-container {
+    display: inline-block;
+    vertical-align: middle;
+}
+.post-widget-meta {
+    color: #fff;
+}
+.post-widget-meta .comment-icon {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 0;
+    right: 10px;
+    color: #00529b;
+    background: url(https://hypopenguin.com/img/comment-icon.png) center/contain;
+    justify-content: center;
+    display: flex;
+}
+.post-widget-meta .comment-icon .comment-icon-text {
+    width: 100%;
+    height: 100%;
+    font-family: "Burbank Small Bold", Helvetica, Arial, sans-serif;
+    font-size: 85%;
+    position: absolute;
+    top: 23%;
+    text-align: center;
+}
+.post-widget-meta .comment-icon .comment-icon-text .comment-icon-image {
+    width: 100%;
+    height: 14px;
+    background: url(https://hypopenguin.com/img/comment-icon-small.png) center/45% no-repeat;
+}
+.post-widget .blog-avatar {
+    height: 52px;
+    width: 52px;
+    margin: 0 10px 10px 0;
+    border-width: 2px;
+    background-size: 100px;
+    background-position: center -14px;
+    display: inline-block;
+    vertical-align: middle;
+}
+.post-widget-gradient {
+    height: 70px;
+    width: 100%;
+    background: -moz-linear-gradient(bottom, #b53131 0, transparent 100%);
+    background: -webkit-linear-gradient(bottom, #b53131 0, transparent 100%);
+    background: linear-gradient(to top, #b53131 0, transparent 100%);
+    border-radius: 5px 5px 0 0;
+    position: absolute;
+    top: 80px;
+}
+.post-type-news .post-widget-gradient {
+    background: -moz-linear-gradient(bottom, #b53131 0, transparent 100%);
+    background: -webkit-linear-gradient(bottom, #b53131 0, transparent 100%);
+    background: linear-gradient(to top, #b53131 0, transparent 100%);
+}
+.post-type-videos .post-widget-gradient {
+    background: -moz-linear-gradient(bottom, #8378c3 0, transparent 100%);
+    background: -webkit-linear-gradient(bottom, #8378c3 0, transparent 100%);
+    background: linear-gradient(to top, #8378c3 0, transparent 100%);
+}
+.post-type-sneak-peeks .post-widget-gradient {
+    background: -moz-linear-gradient(bottom, #177326 0, transparent 100%);
+    background: -webkit-linear-gradient(bottom, #177326 0, transparent 100%);
+    background: linear-gradient(to top, #177326 0, transparent 100%);
+}
+.post-type-reviewed-by-you .post-widget-gradient {
+    background: -moz-linear-gradient(bottom, #ed6633 0, transparent 100%);
+    background: -webkit-linear-gradient(bottom, #ed6633 0, transparent 100%);
+    background: linear-gradient(to top, #ed6633 0, transparent 100%);
+}
+.post-type-potw .post-widget-gradient {
+    background: -moz-linear-gradient(bottom, #0186b1 0, transparent 100%);
+    background: -webkit-linear-gradient(bottom, #0186b1 0, transparent 100%);
+    background: linear-gradient(to top, #0186b1 0, transparent 100%);
+}
+.post-widget .post-meta-left {
+    width: 60%;
+    display: inline-block;
+    font-size: 14px;
+    font-family: "Burbank Small Bold", Helvetica, Arial, sans-serif;
+    vertical-align: 5px;
+}
+.video-comments {
+    max-height: 350px;
+    overflow: hidden;
+    margin: auto auto 30px;
+    animation-name: comment-extend;
+    animation-duration: 1s;
+}
+#view-more-comments {
+    cursor: pointer;
+    display: none;
+}
+.video-comments:not(.open) {
+    max-height: 126px;
+    animation-name: none;
+}
+.video-comments .more {
+    text-align: center;
+}
+.video-comments .comment-avatar {
+    height: 40px;
+    width: 40px;
+    background-size: 100px auto;
+}
+.video-comments .comment {
+    padding: 15px;
+    animation-name: comment-show;
+    animation-duration: .5s;
+    animation-timing-function: ease-out;
+    overflow: hidden;
+}
+.video-comments:not(.open) .comment {
+    animation-name: none;
+}
+@keyframes comment-show {
+    0% {
+    padding: 0 15px;
+    max-height: 0;
+    opacity: 0;
+}
+100% {
+    padding: 15px;
+    max-height: 76px;
+    opacity: 1;
+}
+}@keyframes comment-extend {
+    0% {
+    max-height: 0;
+}
+100% {
+    max-height: 350px;
+}
+}.video-comments .comment-header {
+    margin-bottom: 0;
+}
+.video-box {
+    margin: -7px -30px 30px;
+}
+.video-box video {
+    width: 100%}
+.single-hypopenguin_video .title-return {
+    margin-bottom: 14px;
+}
+.post-type-news a, .post-type-news h1, .post-type-news h2, .post-type-news h3, .post-type-news h4, .post-type-news h5, .post-type-news h6 {
+    color: #b53131!important;
+}
+.post-type-news .blog-avatar {
+    border-color: #b53131!important;
+}
+.post-type-videos .blog_icon {
+    background-image: url(https://hypopenguin.com/img/video_image.jpg);
+}
+.post-type-videos a, .post-type-videos h1, .post-type-videos h2, .post-type-videos h3, .post-type-videos h4, .post-type-videos h5, .post-type-videos h6 {
+    color: #8378c3!important;
+}
+.post-type-videos .blog-avatar {
+    border-color: #8378c3!important;
+}
+.post-type-sneak-peeks a, .post-type-sneak-peeks h1, .post-type-sneak-peeks h2, .post-type-sneak-peeks h3, .post-type-sneak-peeks h4, .post-type-sneak-peeks h5, .post-type-sneak-peeks h6 {
+    color: #177326!important;
+}
+.post-type-sneak-peeks .blog-avatar {
+    border-color: #177326!important;
+}
+.post-type-reviewed-by-you a, .post-type-reviewed-by-you h1, .post-type-reviewed-by-you h2, .post-type-reviewed-by-you h3, .post-type-reviewed-by-you h4, .post-type-reviewed-by-you h5, .post-type-reviewed-by-you h6 {
+    color: #ed6633!important;
+}
+.post-type-reviewed-by-you .blog-avatar {
+    border-color: #ed6633!important;
+}
+.post-type-potw .blog_icon {
+    background-image: url(https://hypopenguin.com/img/sneak-peek_image.jpg);
+}
+.post-type-potw a, .post-type-potw h1, .post-type-potw h2, .post-type-potw h3, .post-type-potw h4, .post-type-potw h5, .post-type-potw h6 {
+    color: #0186b1!important;
+}
+.post-type-potw .blog-avatar {
+    border-color: #0186b1!important;
+}
+.blog_entry hr {
+    border-color: #e3e3e3;
+}
+.blog_icon.comment {
+    background-image: url(https://hypopenguin.com/img/icon-social.png);
+    height: 10px;
+    width: 10px;
+    -moz-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    transform: scaleX(-1);
+    -ms-filter: fliph;
+    filter: fliph;
+}
+.post-flex {
+    display: flex;
+}
+.category-container {
+    margin: -5px 0 0;
+    float: right;
+    order: 2;
+    padding: 0 0 0 30px;
+    border-left: 2px solid rgba(0, 0, 0, .1);
+}
+.category-container-inner {
+    height: 100%}
+.category-title {
+    margin: 30px 0 10px;
+    text-align: left;
+}
+.category-title:first-of-type {
+    margin-top: 0;
+}
+.category-item {
+    height: 50px;
+    width: 200px;
+    font-weight: 700;
+    color: #fff!important;
+    border-radius: 12px;
+    margin: auto auto 12px;
+    padding: 0 10px;
+    box-sizing: border-box;
+    text-align: center;
+    font-family: "Burbank Small Bold", Helvetica, Arial, sans-serif;
+    background: #528394;
+    border: 2px solid #eee;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#help #tutorial .blue-dialog .arrows .arrow:after, .blue-dialog .tutorial-button {
+    font-family: CCComicrazy, 'Burbank Small Medium', Helvetica, Arial, sans-serif;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+.category-item:hover {
+    border-color: #82bffd;
+}
+.category-item.all {
+    background: #00529b;
+}
+.category-item.news {
+    background: #b53131;
+}
+.category-item.videos {
+    background: #8378c3;
+}
+.category-item.potw {
+    background: #0186b1;
+}
+.category-item.sneak-peeks {
+    background: #177326;
+}
+.category-item.reviewed-by-you {
+    background: #ed6633;
+}
+.category-item span {
+    vertical-align: middle;
+    justify-self: center;
+}
+.category-item .blog-avatar {
+    height: 30px;
+    width: 30px;
+    border-width: 2px;
+    display: inline-block;
+    border-color: #fff;
+    vertical-align: middle;
+    margin: 0 15px 0 0;
+    background-size: 75px;
+    background-position: center -12px;
+}
+#faq .hand {
+    background: url(https://hypopenguin.com/img/help/faq_fin_bg.gif) right 0 no-repeat;
+    width: 30px;
+    height: 38px;
+    position: absolute;
+    right: 330px;
+    top: 268px;
+}
+#faq .backtop, #faq .myCart {
+    right: 0;
+    position: absolute;
+}
+#faq #content .padd {
+    background: url(https://hypopenguin.com/img/help/faq_bg_new.gif) 560px 1380px no-repeat;
+}
+#faq .box540 a {
+    background: url(https://hypopenguin.com/img/help/questionmark.gif) no-repeat;
+    padding-left: 16px;
+    margin-bottom: .3em;
+    display: block;
+    font-weight: 700;
+}
+#faq .lastFaq {
+    margin-bottom: 0!important;
+}
+#faq .quotelist {
+    background: url(https://hypopenguin.com/img/help/bar840.gif) 30px 0 no-repeat;
+}
+#faq .backtop a:link, #faq .backtop a:visited {
+    display: block;
+    width: 174px;
+    height: 40px;
+    background: url(https://hypopenguin.com/img/help/button_backtop.gif) no-repeat;
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+#faq .backtop a:hover {
+    background: url(https://hypopenguin.com/img/help/button_backtop.gif) 0 -40px no-repeat;
+}
+#helpinside #flash_center {
+    display: block;
+    margin: 0 auto;
+    width: 760px;
+}
+#helpinside .backtop a {
+    display: block;
+    width: 174px;
+    background: url(https://hypopenguin.com/img/help/button_backtop.gif) no-repeat;
+    height: 40px;
+    float: right;
+    margin: 10px auto 30px 30px;
+}
+#helpinside .backtop a:active, #helpinside .backtop a:hover {
+    background-position: 0 -40px;
+}
+#helpinside td, #helpinside th {
+    padding: 0;
+    border: none;
+}
+#faq .myCart {
+    top: 43px;
+}
+#faq .myCart a:link, #faq .myCart a:visited {
+    display: block;
+    width: 190px;
+    height: 46px;
+    background: url(https://hypopenguin.com/img/help/button_mycart.gif) no-repeat;
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+#faq .myCart a:hover {
+    background: url(https://hypopenguin.com/img/help/button_mycart.gif) 0 -46px no-repeat;
+}
+#faq .alt .backtop a:link, #faq .alt .backtop a:visited {
+    background: url(https://hypopenguin.com/img/help/button_backtop_alt.gif) no-repeat;
+}
+#faq .alt .backtop a:hover {
+    background: url(https://hypopenguin.com/img/help/button_backtop_alt.gif) 0 -40px no-repeat;
+}
+#faq .hero {
+    background: url(https://hypopenguin.com/img/help/faq_fin_bg.gif) right 0 no-repeat;
+    width: 30px;
+    height: 38px;
+    position: absolute;
+    right: 330px;
+    op: 288px;
+}
+#accolades #content .padd {
+    background: url(https://hypopenguin.com/img/help/accolades_testimonials_bg.gif) center 86px no-repeat;
+    min-height: 320px;
+}
+#accolades .box540 .inner .header {
+    margin: 0;
+    padding: 5px 0 0;
+}
+#accolades .box540 {
+    position: relative;
+    top: 13px;
+}
+#accolades .quotelist div {
+    padding-bottom: 20px;
+}
+#help.content .padd {
+    background: url(https://hypopenguin.com/img/help/helpTut_big.gif) 299px 95px no-repeat;
+    overflow: visible;
+}
+#help.content .colLeft {
+    float: left;
+    width: 491px;
+}
+#help.content .colLeft .secHdr {
+    width: 230px;
+    margin: 10px 0 0;
+}
+#help.content .colLeft p {
+    width: 200px;
+    line-height: 1.3em;
+}
+#help.content .colRight {
+    position: relative;
+    float: right;
+    width: 332px;
+}
+#help .box332 {
+    width: 332px;
+    font-size: 90%}
+#help .box332bottom {
+    background-color: #fff;
+    height: 30px;
+}
+#help .box332 .top332 {
+    position: relative;
+    display: block;
+}
+#help .box332 .inner {
+    position: relative;
+    background: url(https://hypopenguin.com/img/help/box332_mid.gif) repeat-y;
+    padding: 1px 0 0;
+}
+#help .box332 .header {
+    font-size: 80%;
+    color: #ff9a00;
+    width: 170px;
+}
+#help .box332 p {
+    width: 190px;
+}
+#help .box332 .item {
+    border-top: 3px solid #ffd88b;
+    position: relative;
+    padding: 20px;
+}
+#help .box332 .first {
+    padding-top: 0;
+    border-top: none;
+}
+#help .box332 .last {
+    padding-bottom: 0;
+}
+#help .box332 .inner .item img {
+    position: absolute;
+    top: 16px;
+    right: 20px;
+}
+.box490 {
+    background: url(https://hypopenguin.com/img/help/box490_top.jpg) no-repeat #bcddff;
+    width: 490px;
+}
+.box490 div.inner {
+    background: url(https://hypopenguin.com/img/help/box490_bot.gif) left bottom no-repeat;
+    padding: 0 20px 20px;
+}
+.box490 .header {
+    color: #6a9ed7;
+    margin-bottom: 10px;
+    font-size: 80%}
+#help .box490 img {
+    float: right;
+    position: relative;
+}
+#help .box490 a {
+    background: url(https://hypopenguin.com/img/help/questionmark_blue.gif) no-repeat;
+    padding-left: 16px;
+    margin-bottom: .9em;
+    display: block;
+    font-weight: 700;
+}
+#help.content .watchTut a, #help.content .watchTut a:link, #help.content .watchTut a:visited {
+    display: block;
+    width: 283px;
+    height: 46px;
+    background: url(https://hypopenguin.com/img/help/button_watchtut.gif) no-repeat;
+    border: 0;
+    margin: 10px 0 30px;
+    padding: 0;
+}
+#help.content .watchTut a:hover {
+    background: url(https://hypopenguin.com/img/help/button_watchtut.gif) 0 -46px no-repeat;
+    width: 283px;
+    height: 46px;
+}
+#help.content .readTut a, #help.content .readTut a:link, #help.content .readTut a:visited {
+    display: block;
+    width: 252px;
+    height: 46px;
+    background: url(https://hypopenguin.com/img/help/button_readtut.gif) no-repeat;
+    border: 0;
+    margin: 10px 0 30px;
+    padding: 0;
+    font-size: 0;
+}
+#help .tutorial_button {
+    float: right;
+    width: 148px;
+    margin-right: 10px;
+    padding-top: 55px;
+    z-index: 500;
+}
+#help.content .readTut a:hover {
+    background: url(https://hypopenguin.com/img/help/button_readtut.gif) 0 -46px no-repeat;
+    width: 252px;
+    height: 46px;
+}
+#help.content .gonow a, #help.content .gonow a:link, #help.content .gonow a:visited {
+    display: block;
+    width: auto;
+    height: 32px;
+    background: url(https://hypopenguin.com/img/help/button_gonow.gif) no-repeat;
+    border: 0;
+    color: #f90;
+    font-weight: 700;
+    margin: 10px 0 0;
+    padding: 0;
+}
+#help.content .gonow a:hover {
+    background: url(https://hypopenguin.com/img/help/button_gonow.gif) 0 -32px no-repeat;
+    width: auto;
+    height: 32px;
+    color: #7ca1c8;
+}
+#help.content .gonow .btnTxt {
+    display: block;
+    width: auto;
+    margin: 0 0 0 47px;
+    padding: 8px 0 0;
+}
+#help.content .tutorials a, #help.content .tutorials a:link, #help.content .tutorials a:visited {
+    display: block;
+    width: 111px;
+    height: 32px;
+    background: url(https://hypopenguin.com/img/help/button_tutorials.gif) no-repeat;
+    border: 0;
+    margin-top: 10px;
+    padding: 0;
+}
+#help.content .tutorials a:hover {
+    background: url(https://hypopenguin.com/img/help/button_tutorials.gif) 0 -32px no-repeat;
+    width: 85px;
+    height: 32px;
+}
+#help.content .faq a, #help.content .faq a:link, #help.content .faq a:visited {
+    display: block;
+    width: 50px;
+    height: 32px;
+    background: url(https://hypopenguin.com/img/help/button_faq.gif) no-repeat;
+    border: 0;
+    margin-top: 10px;
+    padding: 0;
+}
+#help.content .faq a:hover {
+    background: url(https://hypopenguin.com/img/help/button_faq.gif) 0 -32px no-repeat;
+    width: 50px;
+    height: 32px;
+}
+#help.content .techQuestions a, #help.content .techQuestions a:link, #help.content .techQuestions a:visited {
+    display: block;
+    width: 180px;
+    height: 32px;
+    background: url(https://hypopenguin.com/img/help/button_techquestions.gif) no-repeat;
+    border: 0;
+    margin-top: 10px;
+    padding: 0;
+}
+#help.content .techQuestions a:hover {
+    background: url(https://hypopenguin.com/img/help/button_techquestions.gif) 0 -32px no-repeat;
+    width: 111px;
+    height: 32px;
+}
+#help.content .contactUs a, #help.content .contactUs a:link, #help.content .contactUs a:visited {
+    display: block;
+    width: 144px;
+    height: 32px;
+    background: url(https://hypopenguin.com/img/help/button_contactus.gif) no-repeat;
+    border: 0;
+    margin-top: 10px;
+    padding: 0;
+}
+#help.content .contactUs a:hover {
+    background: url(https://hypopenguin.com/img/help/button_contactus.gif) 0 -32px no-repeat;
+    width: 164px;
+    height: 32px;
+}
+.box840b {
+    background: url(https://hypopenguin.com/img/help/box840b_top.jpg) no-repeat #bcddff;
+    width: 840px;
+    font-size: 90%;
+    position: relative;
+}
+.box840b div.inner {
+    background: url(https://hypopenguin.com/img/help/box840b_bot.gif) left bottom no-repeat;
+    padding: 0 20px 20px;
+}
+.box490y {
+    background: url(https://hypopenguin.com/img/help/box490_bg.gif) repeat-y #fff9b9;
+    width: 490px;
+}
+.box490y div.inner {
+    background: url(https://hypopenguin.com/img/help/box490_botyel.gif) left bottom no-repeat;
+    padding: 0 20px 10px;
+}
+.box490y .inner span.l {
+    float: left;
+    width: 165px;
+    height: 125px;
+    background: url(https://hypopenguin.com/img/help/community_drawpenguin.gif) right top no-repeat;
+    margin: -11px 0 0;
+    padding: 10px 100px 0 0;
+}
+.box490y .inner span.r {
+    float: right;
+    width: 160px;
+}
+.box490y .flLeft {
+    float: left;
+    width: 284px;
+}
+.box490y .flRight {
+    float: right;
+    padding: 0 125px 0 0;
+}
+.box490y .header {
+    background: url(https://hypopenguin.com/img/help/box490_topyel.gif) no-repeat;
+    color: #6a9ed7;
+    font-size: 80%;
+    margin: 0 0 10px;
+    padding: 16px 0 0 20px;
+}
+#form .billing input, #form .submit input {
+    background: url(https://hypopenguin.com/img/help/button_submit.gif) no-repeat;
+}
+#helpinside ul {
+    list-style: inside url(https://hypopenguin.com/img/help/bullet-orange.gif);
+}
+#helpinside .bullet_indent {
+    margin-left: 18px;
+}
+#helpinside #inside-left, #helpinside #inside-right {
+    line-height: 2;
+    margin: 0;
+    padding: 3px;
+    text-align: left;
+}
+#helpinside #icon-menu {
+    width: 100%;
+    float: left;
+    text-align: left;
+    position: relative;
+    padding: 3px;
+}
+#helpinside #inside-left {
+    width: 40%;
+    float: left;
+}
+#helpinside .content-left {
+    padding-top: 15px;
+    width: 57%;
+    height: 220px;
+    float: left;
+    text-align: left;
+    position: relative;
+}
+#helpinside .content-tall-left {
+    padding-top: 15px;
+    width: 57%;
+    height: 450px;
+    float: left;
+    text-align: left;
+    position: relative;
+}
+#helpinside .content-right {
+    float: right;
+    text-align: left;
+    position: relative;
+}
+#helpinside .content-sm-left {
+    width: 80%;
+    height: 70px;
+    float: left;
+    text-align: left;
+}
+#helpinside .content-sm-right {
+    width: 20%;
+    float: right;
+    text-align: right;
+}
+#helpinside #tutorials {
+    float: right;
+    position: relative;
+    text-align: center;
+    width: 388px;
+}
+#helpinside .icon_left {
+    float: left;
+    height: 40px;
+}
+#helpinside .icon_left_title {
+    float: left;
+    width: 92%;
+    height: 25px;
+    padding-top: 15px;
+}
+#helpinside .contact-left {
+    width: 70%;
+    height: 200px;
+    float: left;
+    text-align: left;
+}
+#helpinside .contact-right {
+    float: right;
+    text-align: left;
+    height: 200px;
+    width: 30%;
+    padding-bottom: 50px;
+}
+#form .wait_time {
+    width: 385px;
+    height: 46px;
+    border: 0;
+    float: left;
+    position: relative;
+    visibility: visible;
+    padding: 0;
+    color: #00529b;
+    margin: 22px 0 0;
+}
+#form ul {
+    list-style: url(https://hypopenguin.com/img/help/bullet-orange.gif);
+}
+#form .box510 {
+    padding-top: 5px;
+}
+#form .artwork input, #form .billing input, #form .submit input {
+    width: 141px;
+    height: 46px;
+    border: 0;
+    padding: 0;
+    display: block;
+}
+#form .submit input {
+    margin: 22px 0 0 438px;
+}
+#form .billing input {
+    margin: 22px 0 0 50px;
+}
+#form .artwork input {
+    margin: 22px 0 0 365px;
+}
+#form .error_icon {
+    float: left;
+    height: 109px;
+}
+#form .error_message {
+    float: left;
+    margin-left: 160px;
+}
+#form .errorbox {
+    float: none;
+    width: 789px;
+    background-color: #ffbd38;
+    background-image: url(https://hypopenguin.com/img/help/errorbox_bkg2.gif);
+    background-repeat: repeat-x;
+    background-position: 0 0;
+}
+#form .errorbox_inner {
+    vertical-align: top;
+    padding: 0 20px 50px;
+}
+#form .errorbox_inner ul {
+    margin-left: 100px;
+    margin-top: 20px;
+    height: 30px;
+}
+.asterisk {
+    color: #fff;
+}
+.updated {
+    font-size: 10px;
+}
+#hdrWrap h1 a, #hdrWrap h1 a:hover, #hdrWrap h1 a:link, #hdrWrap h1 a:visited {
+    border: none;
+    text-decoration: none;
+    height: 87px;
+    width: 176px;
+    display: block;
+}
+#ftrContent ul li a.new:active, #ftrContent ul li a.new:link, #ftrContent ul li a.new:visited {
+    color: #fc0;
+}
+#ftrContent ul li a.new:hover {
+    color: #5ad0fa;
+}
+a:active, a:link, a:visited {
+    color: #00529b;
+    text-decoration: none;
+}
+.box540 div.header, .box840 h3, .box840L h3, .box840b h3 {
+    color: #6a9ed7;
+    padding-top: 20px;
+    margin-bottom: 10px;
+}
+#accolades h2, #faq h2, #form h2, #help h2, #reportbug h2 {
+    margin-bottom: 60px;
+}
+#accolades #content .padd .padd, #faq #content .padd .padd, #form #content .padd .padd, #reportbug #content .padd .padd {
+    background: 0 0;
+}
+#form h3, #reportbug h3 {
+    font-size: 125%!important;
+}
+#faq h4, #form h4, #reportbug h4 {
+    color: #00529b;
+    font-size: 120%!important;
+    font-weight: 700;
+}
+#faq .box540, #help .box490, #reportbug .box510 {
+    padding-top: 20px;
+}
+#form .box510 img, #reportbug .box510 img {
+    float: left;
+    margin-left: 10px;
+}
+#form .box510 h3, #form .box510 p, #reportbug .box510 h3, #reportbug .box510 p {
+    margin-left: 160px;
+}
+#form .box840L .inner, #reportbug .box840L .inner {
+    position: relative;
+    padding-top: 20px;
+}
+#form .box840L .box840Lbot, #reportbug .box840L .box840Lbot {
+    position: relative;
+    top: 3px;
+}
+#form .formTitle, #reportbug .formTitle {
+    background: url(https://hypopenguin.com/img/help/reportbug_form_bg.gif) 30px bottom no-repeat;
+    padding: 70px 0 .2em 130px;
+}
+#form .formTitle h3, #reportbug .formTitle h3 {
+    margin: 0 0 10px 25px;
+}
+#form .submit input:hover, #reportbug .submit input:hover {
+    background: url(https://hypopenguin.com/img/help/button_submit.gif) 0 -46px no-repeat;
+}
+#accolades h3, #faq h3, #help h3 {
+    font-size: 140%!important;
+}
+#accolades #content .padd .pageName, #help.content .padd .pageName {
+    height: 74px;
+}
+#accolades h4, #help h4, .age-gate-modal .content h4 {
+    color: #00529b;
+    font-size: 135%!important;
+    font-weight: 700;
+    margin: 0;
+    padding: 0 0 5px;
+}
+#accolades p, #help p {
+    line-height: 150%;
+    margin: 0;
+}
+.box490 p, .box490y p {
+    font-size: 90%}
+#form ol, #helpinside ol {
+    list-style-type: decimal;
+    list-style-position: inside;
+}
+#form p, #helpinside p {
+    line-height: 100%;
+    margin: 3px 0 7px;
+}
+#form .divider, #helpinside .divider {
+    background: url(https://hypopenguin.com/img/help/divider.gif) no-repeat;
+    margin-top: 20px;
+    padding: 15px;
+}
+#form table.center, #form table.center td, #helpinside table.center, #helpinside table.center td {
+    text-align: center;
+}
+#form table.centerleft, #helpinside table.centerleft {
+    text-align: left;
+    margin-left: 150px;
+}
+#helpinside table.characters {
+    margin-left: 40px;
+}
+#acctpadd .menu a, #form .menu a, #helpinside .menu a {
+    display: block;
+    width: 174px;
+    background: url(https://hypopenguin.com/img/help/button_backtop.gif) no-repeat;
+    height: 40px;
+    float: right;
+    margin: 30px auto 30px 30px;
+}
+#acctpadd .menu a:active, #acctpadd .menu a:hover, #form .menu a:active, #form .menu a:hover, #helpinside .menu a:active, #helpinside .menu a:hover {
+    background-position: 0 -40px;
+}
+#form .space, #helpinside .space {
+    padding: 7px;
+}
+#form #content .padd, #form .box510 .inner {
+    padding-bottom: 80px;
+}
+#mem_in li, ol, ul {
+    border: none;
+    list-style-position: inside;
+    margin: 0;
+    padding: 0;
+}
+.body-preview a, .title-part {
+    color: #00529b!important;
+}
+#help #tutorial .blue-dialog {
+    width: 800px;
+    height: 440px;
+}
+#help #tutorial .blue-dialog .tutorial-image {
+    width: 100%;
+    height: 100%;
+    background: center/contain no-repeat;
+}
+#help #tutorial .blue-dialog .step {
+    display: none;
+    flex: 1;
+}
+#help #tutorial .blue-dialog .step>div {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    padding: 15px;
+    box-sizing: border-box;
+    position: relative;
+    margin: 30px 0 0;
+}
+#help #tutorial .blue-dialog .step .step-title {
+    width: 100%;
+    color: #fff;
+    font-size: 32px;
+    text-shadow: 3px 2px #0052af;
+}
+#help #tutorial .blue-dialog .step .step-text {
+    margin: 15px 0 0;
+    color: #fff;
+    font-size: 18px;
+}
+.blue-dialog .tutorial-button {
+    width: 144px;
+    height: 46px;
+    background: url(https://hypopenguin.com/img/help/tutorial/button.png) 0 0/144px 92px no-repeat;
+    margin: 15px 0 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-size: 16px;
+    zoom: 1.1;
+    position: relative;
+    z-index: 0;
+    text-align: center;
+    color: #fff;
+    outline: 0;
+    border: 0;
+}
+.blue-dialog .tutorial-button:before {
+    content: attr(data-text);
+    -webkit-text-stroke-width: 6px;
+    -webkit-text-stroke-color: #000;
+    position: absolute;
+    z-index: -1;
+    right: 0;
+    left: 0;
+    margin: auto;
+}
+.blue-dialog .tutorial-button:hover {
+    background-position: 0 -46px;
+}
+#help #tutorial .blue-dialog .arrows {
+    width: 60%;
+    justify-content: space-between;
+    display: flex;
+    zoom: 1.2;
+    position: absolute;
+    right: 0;
+    bottom: 30px;
+    left: 0;
+    margin: auto;
+}
+#help #tutorial .blue-dialog .step.step-1 .arrows {
+    justify-content: flex-end;
+}
+#help #tutorial .blue-dialog .arrows .arrow {
+    width: 41px;
+    height: 56px;
+    background: 0 0/128px 56px no-repeat;
+    cursor: pointer;
+    position: relative;
+}
+#help #tutorial .blue-dialog .arrows .arrow:after {
+    content: 'Next';
+    color: #fff;
+    display: block;
+    position: absolute;
+    right: 0;
+    bottom: -22px;
+    left: 0;
+    margin: auto;
+    font-size: 12px;
+}
+#help #tutorial .blue-dialog .arrows .arrow.arrow.arrow-prev:after {
+    content: 'Back'}
+#help #tutorial .blue-dialog .arrows .arrow:hover {
+    background-position: -41px 0;
+}
+#help #tutorial .blue-dialog .arrows .arrow:active {
+    background-position: -82px 0;
+}
+#help #tutorial .blue-dialog .arrows .arrow.arrow-next {
+    background-image: url(https://hypopenguin.com/img/help/tutorial/tutorial-arrow-next.jpg);
+}
+#help #tutorial .blue-dialog .arrows .arrow.arrow-prev {
+    background-image: url(https://hypopenguin.com/img/help/tutorial/tutorial-arrow-prev.jpg);
+}
+#help #tutorial .blue-dialog .step.step-1 .tutorial-image {
+    background-image: url(https://hypopenguin.com/img/help/tutorial/step-1.png);
+}
+#help #tutorial .blue-dialog .step.step-2 .tutorial-image {
+    background-image: url(https://hypopenguin.com/img/help/tutorial/step-2.png);
+}
+#help #tutorial .blue-dialog .step.step-3 .tutorial-image {
+    background-image: url(https://hypopenguin.com/img/help/tutorial/step-3.png);
+}
+#help #tutorial .blue-dialog .step.step-4 .tutorial-image {
+    background-image: url(https://hypopenguin.com/img/help/tutorial/step-4.png);
+}
+#help #tutorial .blue-dialog .step.step-5 .tutorial-image {
+    background-image: url(https://hypopenguin.com/img/help/tutorial/step-5.png);
+}
+#help #tutorial .blue-dialog .step.step-1 .arrows .arrow.arrow-prev, #help #tutorial .blue-dialog .step.step-5 .arrows .arrow.arrow-next {
+    display: none;
+}
+.blue-dialog {
+    background: #0280cd;
+    border-radius: 20px;
+    border: 2.5px solid #0cf;
+    box-shadow: 0 0 0 3px #036;
+    padding: 15px;
+    position: relative;
+    box-sizing: border-box;
+    display: flex;
+    margin: 13px;
+}
+.login-comment-box {
+    height: 82px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 10px;
+    display: grid;
+}
+.account-prompt, .background-blocker {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    display: none;
+    height: 100%;
+    left: 0;
+}
+.login-comment-box .acc-subtitle {
+    text-align: center;
+    font-size: 20px;
+    margin: 15px 0 0!important;
+}
+.background-blocker {
+    background: rgba(0, 0, 0, .8);
+}
+.account-prompt {
+    z-index: 3;
+    justify-content: center;
+    padding: 80px 0 0;
+}
+.account-prompt .close-button {
+    width: 45px;
+    height: 45px;
+    background: url(https://hypopenguin.com/img/close-btn.png) center/contain no-repeat;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+}
+.account-prompt .close-button:after, .account-prompt .close-button:hover {
+    content: '';
+    background-image: url(https://hypopenguin.com/img/close-btn-hover.png);
+}
+.account-prompt .close-button:active, .account-prompt .close-button:before {
+    content: '';
+    background-image: url(https://hypopenguin.com/img/close-btn-active.png);
+}
+.account-prompt.account-prompt-create .close-button {
+    background: #fff;
+}
+.account-prompt .background-blocker {
+    z-index: -1;
+}
+.account-prompt .account-prompt-content {
+    width: 420px;
+    height: 520px;
+}
+.account-prompt.account-prompt-create .account-prompt-content {
+    width: 900px;
+    height: 100%;
+    height: fit-content;
+    height: min-content;
+    background: #fff;
+    border: 3px solid #00529b;
+    box-shadow: none;
+}
+.account-prompt.account-prompt-create .account-prompt-content:after, .account-prompt.account-prompt-create .account-prompt-content:before {
+    box-shadow: none;
+}
+.account-prompt .account-prompt-content:after, .account-prompt .account-prompt-content:before, .blue-dialog:after, .blue-dialog:before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    border-radius: 17px;
+    box-shadow: 0 0 0 10px #fff;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    z-index: -1;
+    box-sizing: border-box;
+}
+.account-prompt .account-prompt-content:before, .blue-dialog:before {
+    box-shadow: 0 0 0 15px rgba(255, 255, 255, .2);
+}
+.account-prompt .account-prompt-content .account-box {
+    flex: 1;
+    border-radius: 12px;
+    margin: 15px;
+    display: flex;
+    flex-direction: column;
+}
+.account-prompt .account-prompt-content .account-box[role=button] {
+    cursor: pointer;
+}
+.account-prompt .account-prompt-content .account-box[role=button]:hover {
+    background: #0059a2;
+}
+.account-prompt .account-prompt-content .account-box .account-content, .account-prompt .account-prompt-content .account-box .account-footer, .account-prompt .account-prompt-content .account-box .account-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.account-prompt .account-prompt-content .account-box .account-header.ui-draggable-handle {
+    cursor: move;
+}
+.account-prompt .account-prompt-content .account-box .account-header .account-logo {
+    display: block;
+}
+.account-prompt .account-prompt-content .account-box .account-content {
+    margin: 50px 0 0;
+}
+.account-prompt .account-prompt-content .account-box.account-create .account-content {
+    background: url(https://hypopenguin.com/img/create-penguin-transparent.png) center/70% no-repeat;
+}
+.account-prompt .account-prompt-content .account-box .account-content .login-form {
+    width: 100%;
+    padding: 0 10px;
+    box-sizing: border-box;
+}
+.account-prompt .account-prompt-content .account-box .account-content .login-form .login-form-main {
+    flex-direction: column;
+    box-sizing: border-box;
+    align-items: center;
+}
+.account-prompt .account-prompt-content .account-box .account-content .login-form .login-form-main .tutorial-button {
+    zoom: 1.4;
+    margin: 10px 0;
+}
+.account-prompt .account-prompt-content .account-box .account-content .login-form .login-form-main input:not([type=submit]) {
+    width: 100%;
+    margin: 0 0 10px;
+    border-color: #015ea0;
+}
+.account-prompt .account-prompt-content .account-box .account-content .login-form .account-label {
+    align-self: flex-start;
+    color: #fff;
+    font-family: Burbank Small Bold, Helvetica, Arial, sans-serif;
+    margin: 0 0 5px;
+    display: block;
+}
+.account-prompt .account-prompt-content .account-box .account-content .login-form .account-label.account-hint {
+    font-size: 20px;
+    text-align: center;
+    margin: 0 0 40px;
+}
+.account-prompt .account-prompt-content .account-box .account-content .login-form .login-form-main .login-input-wrapper {
+    width: 100%}
+.account-prompt .account-prompt-content .account-box .account-content .login-form .login-form-main .login-input-wrapper:first-child {
+    margin: 0 0 10px;
+}
+.account-prompt .account-prompt-content .account-box .account-content .login-form .login-form-main .login-input-wrapper .multiple-input-wrapper {
+    display: flex;
+    margin: 0 0 40px;
+}
+.account-prompt .account-prompt-content .account-box .account-content .login-form .login-form-main .login-input-wrapper .multiple-input-wrapper input:not([type=button]) {
+    margin: 0 5px;
+}
+.account-prompt .account-prompt-content .account-box .account-content .login-form .login-form-main .login-input-wrapper .multiple-input-wrapper input[type=number]::-webkit-inner-spin-button, .account-prompt .account-prompt-content .account-box .account-content .login-form .login-form-main .login-input-wrapper .multiple-input-wrapper input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+.account-prompt .account-prompt-content .account-box .account-content .login-form .link-container {
+    margin: 20px 0 0;
+    flex-direction: column;
+}
+.account-prompt .account-prompt-content .account-box .account-content .login-form .link-container .form-subtext {
+    color: #fff;
+    text-align: center;
+    margin: 0;
+}
+.acc-title {
+    color: #fff;
+    font-family: CCComicrazy, 'Burbank Small Medium', Helvetica, Arial, sans-serif;
+    font-weight: 700;
+    font-size: 32px;
+    text-transform: uppercase;
+    text-align: center;
+    position: relative;
+    z-index: 0;
+    padding: 5px 0 0;
+}
+.acc-title:before {
+    content: attr(data-text);
+    -webkit-text-stroke-width: 10px;
+    -webkit-text-stroke-color: #0F3F6F;
+    position: absolute;
+    z-index: -1;
+    right: 0;
+    left: 0;
+    margin: auto;
+}
+.account-form-error {
+    color: #fff;
+    font-family: "Burbank Small Bold", Helvetica, Arial, sans-serif;
+    text-align: center;
+    margin: auto auto 20px;
+    display: none;
+    border: 2px solid #0f3f6f;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+.hypopenguin-session-hidden {
+    display: none;
+}
+.return-link {
+    display: flex;
+}
+.return-link i {
+    font-weight: 700;
+    margin-left: 15px;
+}
+@media (min-width:320px) and (max-width:1024px) {
+    #contentWrap, .latest-post-box .image-preview, .main-container, .subpage #content {
+    width: 100%}
+body, html {
+    overflow-x: hidden;
+}
+body {
+    overflow-y: hidden;
+}
+.subpage #content {
+    left: -2px;
+}
+.latest-post-box {
+    flex-direction: column;
+}
+.latest-post-box .body-preview {
+    margin: auto;
+}
+.community-left, .community-right {
+    width: 100%;
+    float: none;
+    margin: auto;
+    border: none;
+    flex-direction: column;
+}
+.community-left {
+    margin: auto auto 40px;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+.blog_entry .blog-avatar, .blog_head, .like-icon {
+    margin: 0 0 20px;
+}
+#footer {
+    min-width: 100%;
+    background-size: cover!important;
+    background-position: center!important;
+}
+#main-navigation li a:not(.homeTab) {
+    display: none;
+}
+#footer .main-container {
+    padding: 20px;
+    background: 0 0;
+}
+#main-navigation li a, #main-navigation li a.active, #main-navigation li a:hover {
+    background-color: transparent;
+    border: none;
+}
+.blog_header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+.blog_head {
+    zoom: .85;
+    flex: 1;
+    width: 90%;
+    text-align: center;
+}
+.like-icon {
+    display: block;
+    width: 100%;
+    background-size: contain;
+    zoom: .8;
+}
+.subpage #content h4:not(.title-part) {
+    text-align: center;
+}
+.login-comment-box {
+    height: auto;
+}
+.comment-edit-link, .comment-header-date {
+    float: none;
+}
+.comment-header-date:before {
+    content: ' � '}
+.blog_entry .blog-header-thumb {
+    width: 100%;
+    width: calc(100% + 60px);
+    height: 200px;
+}
+#main-navigation li a.homeTab {
+    width: 80px;
+    background-size: cover;
+}
+#footer, #main-navigation {
+    height: 75px;
+    line-height: 75px;
+}
+#footer {
+    height: auto;
+}
+#main-navigation li a {
+    height: 73px;
+    line-height: 45px;
+}
+.latest-post-box .image-preview {
+    margin: -2px -2px 30px;
+}
+.modal .content, .modal.modal-image .content {
+    max-height: 80%;
+    max-width: 80%}
+.comment-field, .modal.modal-image img {
+    max-width: 100%}
+.playTab {
+    display: none;
+}
+.mobile-navigation {
+    background-image: url(https://hypopenguin.com/img/banner.png);
+    background-size: 100% 100%;
+    position: absolute;
+    width: 100%;
+    top: 75px;
+    padding: 20px 0 0;
+    display: none;
+}
+#main-navigation li {
+    float: none;
+    height: 60px;
+    display: inline-block;
+}
+#main-navigation .mobile-navigation li {
+    display: block;
+}
+.nav-icon {
+    float: left;
+    margin: auto auto auto 20px;
+}
+.mobileBtn {
+    float: right!important;
+}
+.mobileBtn a {
+    background-image: url(https://hypopenguin.com/img/nav-icon.png)!important;
+    background-size: 28%!important;
+    background-position: center right!important;
+    background-repeat: no-repeat!important;
+    width: 100px;
+    display: inline-block!important;
+    margin: auto 20px auto auto;
+    transition: background-image .2s ease;
+}
+.mobileBtn a.close {
+    background-image: url(https://hypopenguin.com/img/close-icon.png)!important;
+}
+.close-btn:after {
+    content: 'X'!important;
+}
+.community-section .community-content-wrapper {
+    width: calc(100% + 8px);
+    position: relative;
+    display: flex;
+    flex-wrap: nowrap;
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+}
+.community-section.banners {
+    display: none;
+}
+.community-content {
+    width: 130px;
+    max-height: 100px;
+    display: flex;
+    flex: 0 0 auto;
+    background: #eee;
+}
+.section-features, .section-long .section-2.section-blog, .section-multiple {
+    flex-direction: column;
+}
+#home section, .section-features {
+    width: 90%;
+    margin: auto;
+}
+#home {
+    background: #007bb8;
+}
+.section-features {
+    width: 74%!important;
+    margin-bottom: 40px;
+    display: none;
+}
+.create-penguin-wrapper form, .login-form-main {
+    flex-direction: column;
+}
+.section-multiple .section-left, .section-multiple .section-right {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%}
+.section-2, .section-left, .section-right {
+    margin: 15px auto;
+}
+#videoScene {
+    width: 400%;
+    margin-left: -145%}
+.section-2, .section-blog .inner {
+    background-color: #0095e0;
+}
+#community #content .padd {
+    overflow-x: hidden;
+}
+.featured-home-image {
+    height: 200px;
+}
+.checkboxs {
+    margin-bottom: 80px!important;
+}
+.age-gate-modal {
+    background-position: right center;
+    padding: 50px;
+    display: none;
+    flex-direction: row;
+    flex-wrap: wrap;
+    zoom: .7;
+}
+.age-gate-modal .content {
+    width: 100%;
+    top: 0;
+    right: 0;
+    position: relative;
+}
+.age-gate-modal .content img {
+    width: 80%}
+.age-gate-modal .content h3 {
+    font-size: 28px!important;
+}
+.age-gate-modal .content a {
+    margin-top: 40px;
+}
+.age-gate-modal .content a:nth-of-type(2) {
+    margin-top: 10px;
+}
+.login-form input:not([type=submit]) {
+    width: 100%;
+    margin: auto auto 10px;
+}
+.login-form .hypopenguin-button {
+    margin-top: 10px;
+    margin-left: 0;
+    margin-right: 0;
+}
+.login-form .form-subtext {
+    margin: auto auto 5px;
+    display: block;
+    text-align: center;
+}
+.login-form .link-container {
+    margin: 15px auto auto;
+    display: block;
+}
+.video-player {
+    height: auto;
+    width: 100%}
+.post-widgets {
+    grid-template-columns: none;
+    grid-row-gap: 20px;
+    grid-column-gap: 0;
+    padding: 0;
+    margin: 0;
+}
+.post-widget {
+    width: 100%}
+.post-flex {
+    flex-direction: column;
+}
+#community.home .return-link {
+    float: none;
+    margin-bottom: 60px;
+    display: flex;
+    justify-content: flex-end;
+}
+#community.home .title.hypopenguin-title {
+    display: none;
+}
+.category-container {
+    width: 100%;
+    order: 1;
+    margin: 0 0 30px;
+    padding: 0;
+    border: none;
+    position: relative;
+}
+.category-container-inner {
+    width: 100%;
+    height: 50px;
+    overflow-y: scroll;
+    display: flex;
+    position: relative;
+    -webkit-overflow-scrolling: touch;
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+}
+.category-container-inner .category-title {
+    display: none;
+}
+.category-container:after, .community-section:after {
+    content: '';
+    height: 50px;
+    width: 50px;
+    background: -moz-linear-gradient(left, rgba(255, 255, 255, 0) 0, #fff 100%);
+    background: -webkit-linear-gradient(left, rgba(255, 255, 255, 0) 0, #fff 100%);
+    background: linear-gradient(to right, rgba(255, 255, 255, 0) 0, #fff 100%);
+    display: block;
+    position: absolute;
+    top: 0;
+    right: -1px;
+    overflow: auto;
+    pointer-events: none;
+}
+.community-section:after {
+    height: 90%;
+    width: 100px;
+}
+.category-item {
+    margin: 0 5px 0 0;
+    min-width: 120px;
+    max-width: 200px;
+    width: 200px;
+    width: max-content;
+}
+.comment-form .form-submit .hypopenguin-button, .modal .community-content-wrapper .community-content {
+    width: 100%}
+.blue-dialog {
+    margin: 0;
+}
+.account-prompt {
+    padding: 0;
+}
+.account-prompt .account-prompt-content {
+    width: 100%;
+    height: 100%;
+    border-radius: 0;
+    border: 0;
+    flex-direction: column;
+}
+.account-prompt .account-prompt-content .account-box.account-create .account-content {
+    background-size: 50%}
+.account-prompt .account-prompt-content .account-box {
+    padding: 22px;
+}
+.account-prompt .account-prompt-content .account-box.account-create {
+    padding: 0 22px 22px;
+}
+.account-prompt .account-prompt-content .account-box .account-content .login-form {
+    height: fit-content;
+    padding: 0;
+}
+.account-prompt .account-prompt-content .account-box:not(.account-create) .account-header {
+    display: none;
+}
+.comment-container {
+    zoom: .9;
+}
+.comment-respond {
+    flex-direction: column;
+}
+.comment-respond .comment-data {
+    margin: 0 0 20px;
+}
+#cancel-comment-reply-link {
+    margin: 5px 0 0;
+    box-sizing: border-box;
+    text-align: center;
+}
+}@media screen and (max-width:900px) and (orientation:landscape) {
+    .community-section:  not(:last-of-type), .community-widget {
+    flex: 0 calc(50% - 30px);
+    width: calc(50% - 30px);
+    margin: 0 15px 40px;
+}
+.latest-post-box .image-preview {
+    margin: -2px 30px -2px -2px;
+}
+.community-left, .community-right {
+    margin: 0 -15px;
+    display: flex;
+}
+.community-left, .community-right, .latest-post-box {
+    flex-direction: row;
+}
+.community-section:after {
+    height: 150px;
+}
+}
